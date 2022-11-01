@@ -66,7 +66,7 @@ class AsteroideaVisitor(asteroideaVisitor):
 
         self.bookmarks = {}
         AsteroideaVisitor.functions = {}
-        AsteroideaVisitor.function_vars = AsteroideaVisitor.function_vars[:1]
+        #AsteroideaVisitor.function_vars = AsteroideaVisitor.function_vars[:1]
 
         self.update_tape_vars()
 
