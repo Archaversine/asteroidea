@@ -386,4 +386,26 @@ def run(filename: str) -> None:
     visitor.visit(tree)
 
 if __name__ == '__main__':
-    run("hello.csr")
+    if len(sys.argv) == 2 and os.path.exists(sys.argv[1]):
+        run(sys.argv[1])
+        sys.exit(0)
+    elif len(sys.argv) == 2:
+        print(f"ERROR! Invalid target {sys.argv[1]}")
+        sys.exit(1)
+    elif len(sys.argv) > 2:
+        print(f"ERROR! Too many arguments: expected 1, got {len(sys.argv) - 1}.")
+        sys.exit(1)
+
+    # Kept outside loop to retain data about the tape, etc. in shell mode
+    visitor = AsteroideaVisitor()
+    visitor.tape[1] = 3
+
+    # Shell mode
+    while True:
+        data = antlr.InputStream(input("Asteroidea >>> "))
+        lexer = asteroideaLexer(data)
+        stream = antlr.CommonTokenStream(lexer)
+        parser = asteroideaParser(stream)
+        tree = parser.prog()
+        visitor.visit(tree)
+        visitor.visitShowTapeValsOp(None)
