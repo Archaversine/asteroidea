@@ -375,6 +375,12 @@ class AsteroideaVisitor(asteroideaVisitor):
 
         self.update_tape_vars()
 
+    # Visit a parse tree produced by asteroideaParser#haltOp.
+    def visitHaltOp(self, ctx:asteroideaParser.HaltOpContext):
+        print("HALTED")
+        sys.exit(0)
+
+
 def run(filename: str) -> None:
     input_stream = antlr.FileStream(filename)
     lexer = asteroideaLexer(input_stream)
@@ -398,7 +404,6 @@ if __name__ == '__main__':
 
     # Kept outside loop to retain data about the tape, etc. in shell mode
     visitor = AsteroideaVisitor()
-    visitor.tape[1] = 3
 
     # Shell mode
     while True:

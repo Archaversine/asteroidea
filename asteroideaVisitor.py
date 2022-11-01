@@ -19,6 +19,11 @@ class asteroideaVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by asteroideaParser#haltOp.
+    def visitHaltOp(self, ctx:asteroideaParser.HaltOpContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by asteroideaParser#debugOp.
     def visitDebugOp(self, ctx:asteroideaParser.DebugOpContext):
         return self.visitChildren(ctx)

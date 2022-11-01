@@ -14,7 +14,10 @@ stmt: setTapeOp
     | debugOp
     | setVarOp
     | importStatement
+    | haltOp
     ;
+
+haltOp: 'H' ;
 
 debugOp: showTapeBytesOp
     | showTapeValsOp

@@ -26,6 +26,15 @@ class asteroideaListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by asteroideaParser#haltOp.
+    def enterHaltOp(self, ctx:asteroideaParser.HaltOpContext):
+        pass
+
+    # Exit a parse tree produced by asteroideaParser#haltOp.
+    def exitHaltOp(self, ctx:asteroideaParser.HaltOpContext):
+        pass
+
+
     # Enter a parse tree produced by asteroideaParser#debugOp.
     def enterDebugOp(self, ctx:asteroideaParser.DebugOpContext):
         pass
