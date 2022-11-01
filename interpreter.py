@@ -63,9 +63,8 @@ class AsteroideaVisitor(asteroideaVisitor):
 
     def reset_tape_vars(self) -> None:
         self.tape_pos = 0
-
         self.bookmarks = {}
-        AsteroideaVisitor.functions = {}
+        #AsteroideaVisitor.functions = {}
         #AsteroideaVisitor.function_vars = AsteroideaVisitor.function_vars[:1]
 
         self.update_tape_vars()
