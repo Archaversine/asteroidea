@@ -199,6 +199,16 @@ Outputs:
                           ▲                                 
 ```
 
+#### Halt Operator [`H`]
+
+Halts the program and exits safely.
+
+Halt if the current cell is not equal to `0`:
+
+```
+??~H
+```
+
 ### New Concepts
 
 #### Number type
