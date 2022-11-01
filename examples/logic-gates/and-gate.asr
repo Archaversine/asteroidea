@@ -1,0 +1,11 @@
+
+# 0 0 0 0
+
+&and_gate<a, b>(~|$a| ??(~0 ~|$b|))
+
+*and_gate<0, 0> ->
+*and_gate<0, 1> ->
+*and_gate<1, 0> ->
+*and_gate<1, 1>
+
+[%%%]

@@ -1,0 +1,6 @@
+// Simple Hello World Program
+#"Hello, World!!"
+
+newline := 10
+
+[-1]<> ~$newline <=
