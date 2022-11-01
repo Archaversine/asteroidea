@@ -6,6 +6,10 @@ This programming language is a direct upgrade of C\* (documentation [here](https
 Many of the core operations maintain the same behavior, however some have been removed, some have been upgraded,
 and new operators have been updated entirely.
 
+Asteroidea makes use of an actual lexer and parser, allowing it to handle much more complex syntax than what was
+possible with C\*. Asteroidea also has a new visualization tool, making it easier to see what is happening on the tape
+for easier debugging.
+
 ## Changes
 
 ### Removed Operations
