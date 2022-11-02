@@ -199,8 +199,33 @@ class asteroideaVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by asteroideaParser#number.
-    def visitNumber(self, ctx:asteroideaParser.NumberContext):
+    # Visit a parse tree produced by asteroideaParser#numLiteral.
+    def visitNumLiteral(self, ctx:asteroideaParser.NumLiteralContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by asteroideaParser#numParam.
+    def visitNumParam(self, ctx:asteroideaParser.NumParamContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by asteroideaParser#numLookup.
+    def visitNumLookup(self, ctx:asteroideaParser.NumLookupContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by asteroideaParser#numParen.
+    def visitNumParen(self, ctx:asteroideaParser.NumParenContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by asteroideaParser#numNormalize.
+    def visitNumNormalize(self, ctx:asteroideaParser.NumNormalizeContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by asteroideaParser#numExpr.
+    def visitNumExpr(self, ctx:asteroideaParser.NumExprContext):
         return self.visitChildren(ctx)
 
 

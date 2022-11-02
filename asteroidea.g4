@@ -120,7 +120,14 @@ parameterOp: '$' name=IDENTIFIER;
 
 defParams: '<' IDENTIFIER (',' IDENTIFIER)* '>' ;
 callParams: '<' (IDENTIFIER | number) (',' (IDENTIFIER | number))* '>' ;
-number: NUM | lookupOp | parameterOp | '|' number '|';
+
+number: '(' val=number ')'                          # numParen
+    | val=NUM                                       # numLiteral
+    | val=lookupOp                                  # numLookup
+    | val=parameterOp                               # numParam
+    | '|' val=number '|'                            # numNormalize
+    | left=number op=('++' | '--') right=number     # numExpr
+    ;
 
 lookupOp: '^^' name=IDENTIFIER;
 

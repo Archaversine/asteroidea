@@ -350,12 +350,57 @@ class asteroideaListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by asteroideaParser#number.
-    def enterNumber(self, ctx:asteroideaParser.NumberContext):
+    # Enter a parse tree produced by asteroideaParser#numLiteral.
+    def enterNumLiteral(self, ctx:asteroideaParser.NumLiteralContext):
         pass
 
-    # Exit a parse tree produced by asteroideaParser#number.
-    def exitNumber(self, ctx:asteroideaParser.NumberContext):
+    # Exit a parse tree produced by asteroideaParser#numLiteral.
+    def exitNumLiteral(self, ctx:asteroideaParser.NumLiteralContext):
+        pass
+
+
+    # Enter a parse tree produced by asteroideaParser#numParam.
+    def enterNumParam(self, ctx:asteroideaParser.NumParamContext):
+        pass
+
+    # Exit a parse tree produced by asteroideaParser#numParam.
+    def exitNumParam(self, ctx:asteroideaParser.NumParamContext):
+        pass
+
+
+    # Enter a parse tree produced by asteroideaParser#numLookup.
+    def enterNumLookup(self, ctx:asteroideaParser.NumLookupContext):
+        pass
+
+    # Exit a parse tree produced by asteroideaParser#numLookup.
+    def exitNumLookup(self, ctx:asteroideaParser.NumLookupContext):
+        pass
+
+
+    # Enter a parse tree produced by asteroideaParser#numParen.
+    def enterNumParen(self, ctx:asteroideaParser.NumParenContext):
+        pass
+
+    # Exit a parse tree produced by asteroideaParser#numParen.
+    def exitNumParen(self, ctx:asteroideaParser.NumParenContext):
+        pass
+
+
+    # Enter a parse tree produced by asteroideaParser#numNormalize.
+    def enterNumNormalize(self, ctx:asteroideaParser.NumNormalizeContext):
+        pass
+
+    # Exit a parse tree produced by asteroideaParser#numNormalize.
+    def exitNumNormalize(self, ctx:asteroideaParser.NumNormalizeContext):
+        pass
+
+
+    # Enter a parse tree produced by asteroideaParser#numExpr.
+    def enterNumExpr(self, ctx:asteroideaParser.NumExprContext):
+        pass
+
+    # Exit a parse tree produced by asteroideaParser#numExpr.
+    def exitNumExpr(self, ctx:asteroideaParser.NumExprContext):
         pass
 
 

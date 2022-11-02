@@ -33,6 +33,9 @@ class AsteroideaVisitor(asteroideaVisitor):
     PRINT_INT_OP = '<%'
     PRINT_MOVE_INT_OP = '<%>'
 
+    NUM_ADD = '++'
+    NUM_SUBTRACT = '--'
+
     functions = {}
     function_vars = [{}]
 
@@ -55,6 +58,11 @@ class AsteroideaVisitor(asteroideaVisitor):
             AsteroideaVisitor.READ_INT_OP: lambda: int(input()),
             AsteroideaVisitor.PRINT_INT_OP: lambda: print(self.current_cell_value(), end=''),
             AsteroideaVisitor.PRINT_MOVE_INT_OP: lambda: self.print_move(AsteroideaVisitor.PRINT_INT_OP, AsteroideaVisitor.MOVE_RIGHT_OP)
+        }
+
+        self.num_ops = {
+            AsteroideaVisitor.NUM_ADD: lambda x, y: (x + y) % 0x100,
+            AsteroideaVisitor.NUM_SUBTRACT: lambda x, y: (x - y) % 0x100
         }
 
         self.bookmarks = {}
@@ -268,16 +276,33 @@ class AsteroideaVisitor(asteroideaVisitor):
         self.tape[self.tape_pos] = self.io_ops[ctx.op.text]() or self.current_cell_value()
         return None
 
-    # Visit a parse tree produced by asteroideaParser#number.
-    def visitNumber(self, ctx:asteroideaParser.NumberContext):
+    # Visit a parse tree produced by asteroideaParser#numLiteral.
+    def visitNumLiteral(self, ctx:asteroideaParser.NumLiteralContext):
+        return int(ctx.val.text)
 
-        if ctx.children[0].getText()[0] != '|':
-            val = self.visitChildren(ctx)
-        else:
-            val = 1 if self.visit(ctx.children[1]) else 0
+    # Visit a parse tree produced by asteroideaParser#numParam.
+    def visitNumParam(self, ctx:asteroideaParser.NumParamContext):
+        return self.visit(ctx.val)
 
-        #print(f"DEBUG: {val}")
-        return val if val is not None else int(ctx.getText())
+    # Visit a parse tree produced by asteroideaParser#numLookup.
+    def visitNumLookup(self, ctx:asteroideaParser.NumLookupContext):
+        return self.visit(ctx.val)
+
+    # Visit a parse tree produced by asteroideaParser#numParen.
+    def visitNumParen(self, ctx:asteroideaParser.NumParenContext):
+        return self.visit(ctx.val)
+
+    # Visit a parse tree produced by asteroideaParser#numNormalize.
+    def visitNumNormalize(self, ctx:asteroideaParser.NumNormalizeContext):
+        return 1 if self.visit(ctx.val) else 0
+
+    # Visit a parse tree produced by asteroideaParser#numExpr.
+    def visitNumExpr(self, ctx:asteroideaParser.NumExprContext):
+        if not ctx.op.text in self.num_ops.keys():
+            print(f"ERROR! Invalid number operation {ctx.op.text}")
+            sys.exit(1)
+
+        return self.num_ops[ctx.op.text](self.visit(ctx.left), self.visit(ctx.right))
 
     # Visit a parse tree produced by asteroideaParser#parameterOp.
     def visitParameterOp(self, ctx:asteroideaParser.ParameterOpContext):
