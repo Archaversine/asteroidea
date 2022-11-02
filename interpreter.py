@@ -304,6 +304,10 @@ class AsteroideaVisitor(asteroideaVisitor):
 
         return self.num_ops[ctx.op.text](self.visit(ctx.left), self.visit(ctx.right))
 
+    # Visit a parse tree produced by asteroideaParser#numChar.
+    def visitNumChar(self, ctx:asteroideaParser.NumCharContext):
+        return ord(ctx.val.text)
+
     # Visit a parse tree produced by asteroideaParser#parameterOp.
     def visitParameterOp(self, ctx:asteroideaParser.ParameterOpContext):
 

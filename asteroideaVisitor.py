@@ -229,6 +229,11 @@ class asteroideaVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by asteroideaParser#numChar.
+    def visitNumChar(self, ctx:asteroideaParser.NumCharContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by asteroideaParser#numLookup.
     def visitNumLookup(self, ctx:asteroideaParser.NumLookupContext):
         return self.visitChildren(ctx)

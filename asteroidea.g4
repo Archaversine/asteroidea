@@ -135,6 +135,7 @@ number: '(' val=number ')'                          # numParen
     | val=parameterOp                               # numParam
     | '|' val=number '|'                            # numNormalize
     | left=number op=('++' | '--') right=number     # numExpr
+    | '\'' val=.? '\''                              # numChar
     ;
 
 lookupOp: '^^' name=IDENTIFIER;

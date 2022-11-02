@@ -404,6 +404,15 @@ class asteroideaListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by asteroideaParser#numChar.
+    def enterNumChar(self, ctx:asteroideaParser.NumCharContext):
+        pass
+
+    # Exit a parse tree produced by asteroideaParser#numChar.
+    def exitNumChar(self, ctx:asteroideaParser.NumCharContext):
+        pass
+
+
     # Enter a parse tree produced by asteroideaParser#numLookup.
     def enterNumLookup(self, ctx:asteroideaParser.NumLookupContext):
         pass
