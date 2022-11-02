@@ -24,6 +24,11 @@ class asteroideaVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by asteroideaParser#allocOp.
+    def visitAllocOp(self, ctx:asteroideaParser.AllocOpContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by asteroideaParser#debugOp.
     def visitDebugOp(self, ctx:asteroideaParser.DebugOpContext):
         return self.visitChildren(ctx)
@@ -61,6 +66,11 @@ class asteroideaVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by asteroideaParser#setTapeStringOp.
     def visitSetTapeStringOp(self, ctx:asteroideaParser.SetTapeStringOpContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by asteroideaParser#setTapeFileOp.
+    def visitSetTapeFileOp(self, ctx:asteroideaParser.SetTapeFileOpContext):
         return self.visitChildren(ctx)
 
 

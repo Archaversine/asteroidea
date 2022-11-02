@@ -381,6 +381,30 @@ class AsteroideaVisitor(asteroideaVisitor):
         else:
             TapeVisualizer.visualize(self.tape, selected_pos=self.tape_pos, start=len(self.tape) - MAX_TAPE_DISPLAY_WIDTH)
 
+    # Visit a parse tree produced by asteroideaParser#setTapeFileOp.
+    def visitSetTapeFileOp(self, ctx:asteroideaParser.SetTapeFileOpContext):
+        filename = ctx.string.text[1:-1]
+
+        if not os.path.exists(filename):
+            print(f"ERROR! Invalid file {filename}.")
+            sys.exit(1)
+
+        self.tape = []
+        self.reset_tape_vars()
+
+        with open(filename, "rb") as f:
+            while True:
+                x = f.read(1)
+
+                if not x:
+                    break
+
+                self.tape.append(ord(x))
+
+        if not self.tape:
+            print(f"ERROR! File {filename} contains no data.")
+            sys.exit(1)
+
     # Visit a parse tree produced by asteroideaParser#setVarOp.
     def visitSetVarOp(self, ctx:asteroideaParser.SetVarOpContext):
         self.function_vars[-1]['$' + ctx.name.text] = self.visit(ctx.val)
@@ -431,6 +455,10 @@ class AsteroideaVisitor(asteroideaVisitor):
 
         print(f"ERROR! Variable does {var_name} does not exist")
         sys.exit(1)
+
+    # Visit a parse tree produced by asteroideaParser#allocOp.
+    def visitAllocOp(self, ctx:asteroideaParser.AllocOpContext):
+        self.tape.append(0)
 
 
 def run(filename: str) -> None:

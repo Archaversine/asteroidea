@@ -16,9 +16,11 @@ stmt: setTapeOp
     | modifyVarOp
     | importStatement
     | haltOp
+    | allocOp
     ;
 
 haltOp: 'H' ;
+allocOp: '-->';
 
 debugOp: showTapeBytesOp
     | showTapeValsOp
@@ -32,11 +34,13 @@ showTapeValsOp: '[%%%]';
 setTapeOp: setTapeStringOp
     | setTapeCellsOp
     | setTapeLengthOp
+    | setTapeFileOp
     ;
 
 setTapeCellsOp: '#' NUM+ ;
 setTapeLengthOp: '##' cells=NUM values=NUM;
-setTapeStringOp: '#' string=STRING  ;
+setTapeStringOp: '#' string=STRING ;
+setTapeFileOp: '#f' string=STRING ;
 
 setVarOp: name=IDENTIFIER ':=' val=number;
 modifyVarOp: incrementVarOp

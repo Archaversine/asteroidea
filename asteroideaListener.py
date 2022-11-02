@@ -35,6 +35,15 @@ class asteroideaListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by asteroideaParser#allocOp.
+    def enterAllocOp(self, ctx:asteroideaParser.AllocOpContext):
+        pass
+
+    # Exit a parse tree produced by asteroideaParser#allocOp.
+    def exitAllocOp(self, ctx:asteroideaParser.AllocOpContext):
+        pass
+
+
     # Enter a parse tree produced by asteroideaParser#debugOp.
     def enterDebugOp(self, ctx:asteroideaParser.DebugOpContext):
         pass
@@ -104,6 +113,15 @@ class asteroideaListener(ParseTreeListener):
 
     # Exit a parse tree produced by asteroideaParser#setTapeStringOp.
     def exitSetTapeStringOp(self, ctx:asteroideaParser.SetTapeStringOpContext):
+        pass
+
+
+    # Enter a parse tree produced by asteroideaParser#setTapeFileOp.
+    def enterSetTapeFileOp(self, ctx:asteroideaParser.SetTapeFileOpContext):
+        pass
+
+    # Exit a parse tree produced by asteroideaParser#setTapeFileOp.
+    def exitSetTapeFileOp(self, ctx:asteroideaParser.SetTapeFileOpContext):
         pass
 
 
