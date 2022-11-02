@@ -20,7 +20,6 @@ The Following operations have been removed and cannot be used in Asteroidea:
 %%
 C?
 E?      // Will eventually be added back
--->     // Will eventually be added back
 <--     // Will eventually be added back
 {}
 {{}}
@@ -49,6 +48,12 @@ Set the tape to the bytes of a string:
 
 ``` 
 #"this is a string!"
+```
+
+Set the tape to the bytes of a file:
+
+```
+#f "my_file.txt"
 ```
 
 #### Loops and Conditional Statements
@@ -113,6 +118,21 @@ A function passing its parameters to another function:
 &add_and_move<a, b>(*add<$a, $b> ->) // NOTE: It would not matter if a and b were instead x and y
 ```
 
+Asteroidea also supports polymorphism, meaning that you can define multiple functions with the same name
+that take in different numbers of parameters.
+
+Polymorphism in action:
+
+```
+&add<a, b>(~$a ++ $b)
+&add<a>(+$a)
+&add(+1)
+
+*add<1, 2>
+*add<3>
+*add
+```
+
 #### Importables
 
 The Syntax for `&&` has changed:
@@ -137,6 +157,32 @@ copy_of_my_var := $my_var       // Store the value in my_var
 ```
 
 Variables declared inside functions are not accessible from outside the function.
+
+#### Variable Increase and Decrease operators [`+=`] and [`-=`]
+
+Aside from assigning variables, the values of existing variables can be increased and decreased without
+the need to export the value somewhere else and reload it back to the variable with `:=`. Variables can
+only be increased/decreased by numbers.
+
+Increasing a variable:
+
+```
+my_var := 0
+
+my_var += 3
+my_var += $my_other_var
+my_var += ^^my_cell
+```
+
+Decreasing a variable:
+
+```
+my_var := 0
+
+my_var -= 3
+my_var -= $my_other_var
+my_var -= ^^my_cell
+```
 
 #### Variable Lookup Operator [`$`]
 
@@ -169,6 +215,44 @@ It can also be applied to anythign of the number type:
 ```
 +|$my_var|
 +|^^my_cell|
+```
+
+#### Add and Subtract Operator [`++`] and [`--`]
+
+This allows for easy combinations of numbers without the need to do arithmatic in the tape and reload it back
+somewhere else.
+
+Adding numbers together:
+
+```
+1 ++ 1
+
+1 ++ 2 ++ 3
+```
+
+Subtracting numbers:
+
+```
+1 -- 1
+
+1 -- 2 -- 3
+```
+
+Adding and Subtracting numbers:
+
+```
+1 ++ 3 -- 1 ++ 2
+```
+
+### Out String Operators
+
+To make printing information to the terminal easier, you can surround text with two backticks (\`). Note:
+This will not automatically end a newline, but you can add in newlines using `\n`.
+
+Printing `Hello, World!` to the terminal using an out string:
+
+```
+`Hello, World!\n`
 ```
 
 #### Debug Operators [`[===]`] and [`[%%%]`] 
@@ -225,6 +309,7 @@ Anything that requires a number to do something uses a number type. The followin
 ^^my_cell   // Number inside bookmarked cell
 $my_var     // Number inside variable
 |6|         // 'Normalized' number (returns 1 or 0)
+'e'         // ASCII value of 'e' (101)
 ```
 
 These operations can also be chained together:
@@ -235,3 +320,16 @@ These operations can also be chained together:
 |88|        // 'Normalizes' 88
 ```
 
+Number types can be added together useing the `++` operator
+
+```
+1 ++ 1
+|$my_var ++ ^^my_cell| ++ 3
+```
+
+Number types can be subtracted from each other using the `--` operator
+
+```
+5 -- 3
+$my_var -- |^^my_cell|
+```
