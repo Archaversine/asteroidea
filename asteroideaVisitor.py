@@ -74,6 +74,11 @@ class asteroideaVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by asteroideaParser#outStringOp.
+    def visitOutStringOp(self, ctx:asteroideaParser.OutStringOpContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by asteroideaParser#setVarOp.
     def visitSetVarOp(self, ctx:asteroideaParser.SetVarOpContext):
         return self.visitChildren(ctx)

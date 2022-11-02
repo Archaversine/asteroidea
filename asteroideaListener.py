@@ -125,6 +125,15 @@ class asteroideaListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by asteroideaParser#outStringOp.
+    def enterOutStringOp(self, ctx:asteroideaParser.OutStringOpContext):
+        pass
+
+    # Exit a parse tree produced by asteroideaParser#outStringOp.
+    def exitOutStringOp(self, ctx:asteroideaParser.OutStringOpContext):
+        pass
+
+
     # Enter a parse tree produced by asteroideaParser#setVarOp.
     def enterSetVarOp(self, ctx:asteroideaParser.SetVarOpContext):
         pass

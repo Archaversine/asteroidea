@@ -39,6 +39,10 @@ class AsteroideaVisitor(asteroideaVisitor):
     functions = {}
     function_vars = [{}]
 
+    @staticmethod
+    def remake_string(text: str) -> str:
+        return text.encode().decode('unicode_escape')
+
     def __init__(self):
 
         self.tape = [0] * 8
@@ -463,6 +467,10 @@ class AsteroideaVisitor(asteroideaVisitor):
     # Visit a parse tree produced by asteroideaParser#allocOp.
     def visitAllocOp(self, ctx:asteroideaParser.AllocOpContext):
         self.tape.append(0)
+
+    # Visit a parse tree produced by asteroideaParser#outStringOp.
+    def visitOutStringOp(self, ctx:asteroideaParser.OutStringOpContext):
+        print(AsteroideaVisitor.remake_string(ctx.val.text[1:-1]), end='')
 
 
 def run(filename: str) -> None:

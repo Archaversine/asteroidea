@@ -3,6 +3,7 @@ grammar asteroidea;
 prog: stmt* ;
 
 stmt: setTapeOp
+    | outStringOp
     | moveOp
     | modifyCellOp
     | ioOp
@@ -41,6 +42,8 @@ setTapeCellsOp: '#' NUM+ ;
 setTapeLengthOp: '##' cells=NUM values=NUM;
 setTapeStringOp: '#' string=STRING ;
 setTapeFileOp: '#f' string=STRING ;
+
+outStringOp: val=OUT_STRING;
 
 setVarOp: name=IDENTIFIER ':=' val=number;
 modifyVarOp: incrementVarOp
@@ -142,6 +145,7 @@ lookupOp: '^^' name=IDENTIFIER;
 
 NUM: [0-9]+ ;
 STRING : '"' .*? '"' ;
+OUT_STRING : '`' .*? '`' ;
 IDENTIFIER: [a-zA-Z_] [a-zA-Z0-9_]* ;
 
 WS: [ \t\n\r\f] -> skip;
