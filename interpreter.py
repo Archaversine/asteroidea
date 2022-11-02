@@ -120,14 +120,13 @@ class AsteroideaVisitor(asteroideaVisitor):
             return
 
         new_scope = {}
-        arg_list = [child for child in args.children[1:-1:2]]
 
-        if len(params) != len(arg_list):
+        if len(params) != len(args):
             print("ERROR! Length of parameters must equal length of arguments")
             sys.exit(1)
 
         for i, param in enumerate(params):
-            new_scope['$' + param] = self.visit(arg_list[i])
+            new_scope['$' + param] = self.visit(args[i])
 
         self.function_vars.append(new_scope)
 
@@ -170,38 +169,39 @@ class AsteroideaVisitor(asteroideaVisitor):
 
         return None
 
-    # Visit a parse tree produced by asteroideaParser#functionDefinitionStatement.
-    def visitFunctionDefinitionStatement(self, ctx:asteroideaParser.FunctionDefinitionStatementContext):
+    # Visit a parse tree produced by asteroideaParser#funcDefNoParams.
+    def visitFuncDefNoParams(self, ctx:asteroideaParser.FuncDefNoParamsContext):
+        AsteroideaVisitor.functions[f"{ctx.name.text}:0"] = _ProgramFunction([], ctx.block)
 
-        params = []
+    # Visit a parse tree produced by asteroideaParser#funcDefWithParams.
+    def visitFuncDefWithParams(self, ctx:asteroideaParser.FuncDefWithParamsContext):
+        params = self.visit(ctx.params)
+        AsteroideaVisitor.functions[f"{ctx.name.text}:{len(params)}"] = _ProgramFunction(params, ctx.block)
 
-        if ctx.children[2].getText()[0] == '<':
-            params = self.visit(ctx.children[2])
-
-        AsteroideaVisitor.functions[ctx.name.text] = _ProgramFunction(params, ctx.block)
-
-        #print(self.functions)
-
-        return None
-
-
-    # Visit a parse tree produced by asteroideaParser#functionCallStatement.
-    def visitFunctionCallStatement(self, ctx:asteroideaParser.FunctionCallStatementContext):
-        func_name = ctx.name.text
+    # Visit a parse tree produced by asteroideaParser#funcCallNoParams.
+    def visitFuncCallNoParams(self, ctx:asteroideaParser.FuncCallNoParamsContext):
+        func_name = f"{ctx.name.text}:0"
 
         if not func_name in AsteroideaVisitor.functions.keys():
             print(f"ERROR! Function {func_name} doesn't exist!")
             sys.exit(1)
 
-        if ctx.children[-1].getText()[0] == '<':
-            self.set_function_scope(AsteroideaVisitor.functions[func_name].params, ctx.children[-1])
-        else:
-            self.set_function_scope()
-
+        self.set_function_scope()
         self.visitChildren(AsteroideaVisitor.functions[func_name].code)
         self.function_vars.pop()
 
-        #return self.visitChildren(self.functions[func_name])
+    # Visit a parse tree produced by asteroideaParser#funcCallWithParams.
+    def visitFuncCallWithParams(self, ctx:asteroideaParser.FuncCallWithParamsContext):
+        args = self.visit(ctx.params)
+        func_name = f"{ctx.name.text}:{len(args)}"
+
+        if not func_name in AsteroideaVisitor.functions.keys():
+            print(f"ERROR! Function {func_name} doesn't exist!")
+            sys.exit(1)
+
+        self.set_function_scope(AsteroideaVisitor.functions[func_name].params, args)
+        self.visitChildren(AsteroideaVisitor.functions[func_name].code)
+        self.function_vars.pop()
 
     # Visit a parse tree produced by asteroideaParser#scope.
     def visitScope(self, ctx:asteroideaParser.ScopeContext):
@@ -322,7 +322,7 @@ class AsteroideaVisitor(asteroideaVisitor):
 
     # Visit a parse tree produced by asteroideaParser#callParams.
     def visitCallParams(self, ctx:asteroideaParser.CallParamsContext):
-        return self.visitChildren(ctx)
+        return ctx.children[1:-1:2]
 
     # Visit a parse tree produced by asteroideaParser#lookupOp.
     def visitLookupOp(self, ctx:asteroideaParser.LookupOpContext):

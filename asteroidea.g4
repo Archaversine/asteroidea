@@ -66,8 +66,12 @@ functionStatement: functionDefinitionStatement
     | functionCallStatement
     ;
 
-functionDefinitionStatement: '&' name=IDENTIFIER defParams? block=scope;
-functionCallStatement: '*' name=IDENTIFIER callParams?;
+functionDefinitionStatement: '&' name=IDENTIFIER block=scope # funcDefNoParams
+    | '&' name=IDENTIFIER params=defParams block=scope       # funcDefWithParams
+    ;
+functionCallStatement: '*' name=IDENTIFIER  # funcCallNoParams
+    | '*' name=IDENTIFIER params=callParams # funcCallWithParams
+    ;
 
 scope: '(' stmt+ ')' | stmt;
 

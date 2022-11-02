@@ -124,13 +124,23 @@ class asteroideaVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by asteroideaParser#functionDefinitionStatement.
-    def visitFunctionDefinitionStatement(self, ctx:asteroideaParser.FunctionDefinitionStatementContext):
+    # Visit a parse tree produced by asteroideaParser#funcDefNoParams.
+    def visitFuncDefNoParams(self, ctx:asteroideaParser.FuncDefNoParamsContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by asteroideaParser#functionCallStatement.
-    def visitFunctionCallStatement(self, ctx:asteroideaParser.FunctionCallStatementContext):
+    # Visit a parse tree produced by asteroideaParser#funcDefWithParams.
+    def visitFuncDefWithParams(self, ctx:asteroideaParser.FuncDefWithParamsContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by asteroideaParser#funcCallNoParams.
+    def visitFuncCallNoParams(self, ctx:asteroideaParser.FuncCallNoParamsContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by asteroideaParser#funcCallWithParams.
+    def visitFuncCallWithParams(self, ctx:asteroideaParser.FuncCallWithParamsContext):
         return self.visitChildren(ctx)
 
 

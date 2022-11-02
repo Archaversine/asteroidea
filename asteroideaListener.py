@@ -215,21 +215,39 @@ class asteroideaListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by asteroideaParser#functionDefinitionStatement.
-    def enterFunctionDefinitionStatement(self, ctx:asteroideaParser.FunctionDefinitionStatementContext):
+    # Enter a parse tree produced by asteroideaParser#funcDefNoParams.
+    def enterFuncDefNoParams(self, ctx:asteroideaParser.FuncDefNoParamsContext):
         pass
 
-    # Exit a parse tree produced by asteroideaParser#functionDefinitionStatement.
-    def exitFunctionDefinitionStatement(self, ctx:asteroideaParser.FunctionDefinitionStatementContext):
+    # Exit a parse tree produced by asteroideaParser#funcDefNoParams.
+    def exitFuncDefNoParams(self, ctx:asteroideaParser.FuncDefNoParamsContext):
         pass
 
 
-    # Enter a parse tree produced by asteroideaParser#functionCallStatement.
-    def enterFunctionCallStatement(self, ctx:asteroideaParser.FunctionCallStatementContext):
+    # Enter a parse tree produced by asteroideaParser#funcDefWithParams.
+    def enterFuncDefWithParams(self, ctx:asteroideaParser.FuncDefWithParamsContext):
         pass
 
-    # Exit a parse tree produced by asteroideaParser#functionCallStatement.
-    def exitFunctionCallStatement(self, ctx:asteroideaParser.FunctionCallStatementContext):
+    # Exit a parse tree produced by asteroideaParser#funcDefWithParams.
+    def exitFuncDefWithParams(self, ctx:asteroideaParser.FuncDefWithParamsContext):
+        pass
+
+
+    # Enter a parse tree produced by asteroideaParser#funcCallNoParams.
+    def enterFuncCallNoParams(self, ctx:asteroideaParser.FuncCallNoParamsContext):
+        pass
+
+    # Exit a parse tree produced by asteroideaParser#funcCallNoParams.
+    def exitFuncCallNoParams(self, ctx:asteroideaParser.FuncCallNoParamsContext):
+        pass
+
+
+    # Enter a parse tree produced by asteroideaParser#funcCallWithParams.
+    def enterFuncCallWithParams(self, ctx:asteroideaParser.FuncCallWithParamsContext):
+        pass
+
+    # Exit a parse tree produced by asteroideaParser#funcCallWithParams.
+    def exitFuncCallWithParams(self, ctx:asteroideaParser.FuncCallWithParamsContext):
         pass
 
 
