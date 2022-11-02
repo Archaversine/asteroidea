@@ -1,0 +1,16 @@
+# 0
+
+first := 5
+second := 8
+
+third := 0
+third += $first
+third += $second
+
+~$third
+
+third -= ^^__current
+
+~$third
+
+[%%%]

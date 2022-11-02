@@ -1,0 +1,11 @@
+#"Enter first number: Enter second number: Result: XXX"
+
+&multiply<a, b>(~0 [$a]+$b)
+
+>> <- @second <- @first <<
+
+[20]<> @msg ^first %> ^msg
+[21]<> @msg ^second %> ^msg
+[8]<> >>
+
+[%%%]

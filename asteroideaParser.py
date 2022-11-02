@@ -10,94 +10,101 @@ else:
 
 def serializedATN():
     return [
-        4,1,43,261,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,45,280,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
         2,14,7,14,2,15,7,15,2,16,7,16,2,17,7,17,2,18,7,18,2,19,7,19,2,20,
         7,20,2,21,7,21,2,22,7,22,2,23,7,23,2,24,7,24,2,25,7,25,2,26,7,26,
         2,27,7,27,2,28,7,28,2,29,7,29,2,30,7,30,2,31,7,31,2,32,7,32,2,33,
-        7,33,2,34,7,34,2,35,7,35,2,36,7,36,1,0,5,0,76,8,0,10,0,12,0,79,9,
-        0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,94,8,1,
-        1,2,1,2,1,3,1,3,3,3,100,8,3,1,4,1,4,1,4,1,5,1,5,1,6,1,6,1,7,1,7,
-        1,7,3,7,112,8,7,1,8,1,8,4,8,116,8,8,11,8,12,8,117,1,9,1,9,1,9,1,
-        9,1,10,1,10,1,10,1,11,1,11,1,11,1,11,1,12,1,12,1,12,3,12,134,8,12,
-        1,13,1,13,3,13,138,8,13,1,13,1,13,1,13,1,13,1,14,1,14,1,14,1,15,
-        1,15,1,15,1,16,1,16,3,16,152,8,16,1,17,1,17,1,17,1,18,1,18,1,18,
-        1,19,1,19,3,19,162,8,19,1,20,1,20,1,20,3,20,167,8,20,1,20,1,20,1,
-        21,1,21,1,21,3,21,174,8,21,1,22,1,22,4,22,178,8,22,11,22,12,22,179,
-        1,22,1,22,1,22,3,22,185,8,22,1,23,1,23,3,23,189,8,23,1,24,1,24,1,
-        24,1,25,1,25,1,25,1,26,1,26,1,27,1,27,1,27,3,27,202,8,27,1,28,1,
-        28,1,28,1,29,1,29,1,29,1,30,1,30,3,30,212,8,30,1,30,1,30,1,31,1,
-        31,1,32,1,32,1,32,1,33,1,33,1,33,1,33,5,33,225,8,33,10,33,12,33,
-        228,9,33,1,33,1,33,1,34,1,34,1,34,3,34,235,8,34,1,34,1,34,1,34,3,
-        34,240,8,34,5,34,242,8,34,10,34,12,34,245,9,34,1,34,1,34,1,35,1,
-        35,1,35,1,35,1,35,1,35,1,35,3,35,256,8,35,1,36,1,36,1,36,1,36,0,
-        0,37,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,
-        44,46,48,50,52,54,56,58,60,62,64,66,68,70,72,0,2,1,0,29,32,1,0,33,
-        38,260,0,77,1,0,0,0,2,93,1,0,0,0,4,95,1,0,0,0,6,99,1,0,0,0,8,101,
-        1,0,0,0,10,104,1,0,0,0,12,106,1,0,0,0,14,111,1,0,0,0,16,113,1,0,
-        0,0,18,119,1,0,0,0,20,123,1,0,0,0,22,126,1,0,0,0,24,133,1,0,0,0,
-        26,135,1,0,0,0,28,143,1,0,0,0,30,146,1,0,0,0,32,151,1,0,0,0,34,153,
-        1,0,0,0,36,156,1,0,0,0,38,161,1,0,0,0,40,163,1,0,0,0,42,170,1,0,
-        0,0,44,184,1,0,0,0,46,188,1,0,0,0,48,190,1,0,0,0,50,193,1,0,0,0,
-        52,196,1,0,0,0,54,201,1,0,0,0,56,203,1,0,0,0,58,206,1,0,0,0,60,209,
-        1,0,0,0,62,215,1,0,0,0,64,217,1,0,0,0,66,220,1,0,0,0,68,231,1,0,
-        0,0,70,255,1,0,0,0,72,257,1,0,0,0,74,76,3,2,1,0,75,74,1,0,0,0,76,
-        79,1,0,0,0,77,75,1,0,0,0,77,78,1,0,0,0,78,1,1,0,0,0,79,77,1,0,0,
-        0,80,94,3,14,7,0,81,94,3,52,26,0,82,94,3,54,27,0,83,94,3,62,31,0,
-        84,94,3,24,12,0,85,94,3,28,14,0,86,94,3,32,16,0,87,94,3,46,23,0,
-        88,94,3,38,19,0,89,94,3,6,3,0,90,94,3,22,11,0,91,94,3,8,4,0,92,94,
-        3,4,2,0,93,80,1,0,0,0,93,81,1,0,0,0,93,82,1,0,0,0,93,83,1,0,0,0,
-        93,84,1,0,0,0,93,85,1,0,0,0,93,86,1,0,0,0,93,87,1,0,0,0,93,88,1,
-        0,0,0,93,89,1,0,0,0,93,90,1,0,0,0,93,91,1,0,0,0,93,92,1,0,0,0,94,
-        3,1,0,0,0,95,96,5,1,0,0,96,5,1,0,0,0,97,100,3,10,5,0,98,100,3,12,
-        6,0,99,97,1,0,0,0,99,98,1,0,0,0,100,7,1,0,0,0,101,102,5,2,0,0,102,
-        103,5,40,0,0,103,9,1,0,0,0,104,105,5,3,0,0,105,11,1,0,0,0,106,107,
-        5,4,0,0,107,13,1,0,0,0,108,112,3,20,10,0,109,112,3,16,8,0,110,112,
-        3,18,9,0,111,108,1,0,0,0,111,109,1,0,0,0,111,110,1,0,0,0,112,15,
-        1,0,0,0,113,115,5,5,0,0,114,116,5,39,0,0,115,114,1,0,0,0,116,117,
-        1,0,0,0,117,115,1,0,0,0,117,118,1,0,0,0,118,17,1,0,0,0,119,120,5,
-        6,0,0,120,121,5,39,0,0,121,122,5,39,0,0,122,19,1,0,0,0,123,124,5,
-        5,0,0,124,125,5,40,0,0,125,21,1,0,0,0,126,127,5,41,0,0,127,128,5,
-        7,0,0,128,129,3,70,35,0,129,23,1,0,0,0,130,134,3,26,13,0,131,134,
-        3,28,14,0,132,134,3,30,15,0,133,130,1,0,0,0,133,131,1,0,0,0,133,
-        132,1,0,0,0,134,25,1,0,0,0,135,137,5,8,0,0,136,138,5,9,0,0,137,136,
-        1,0,0,0,137,138,1,0,0,0,138,139,1,0,0,0,139,140,3,70,35,0,140,141,
-        5,10,0,0,141,142,3,44,22,0,142,27,1,0,0,0,143,144,5,11,0,0,144,145,
-        3,44,22,0,145,29,1,0,0,0,146,147,5,12,0,0,147,148,3,44,22,0,148,
-        31,1,0,0,0,149,152,3,34,17,0,150,152,3,36,18,0,151,149,1,0,0,0,151,
-        150,1,0,0,0,152,33,1,0,0,0,153,154,5,13,0,0,154,155,3,44,22,0,155,
-        35,1,0,0,0,156,157,5,14,0,0,157,158,3,44,22,0,158,37,1,0,0,0,159,
-        162,3,40,20,0,160,162,3,42,21,0,161,159,1,0,0,0,161,160,1,0,0,0,
-        162,39,1,0,0,0,163,164,5,15,0,0,164,166,5,41,0,0,165,167,3,66,33,
-        0,166,165,1,0,0,0,166,167,1,0,0,0,167,168,1,0,0,0,168,169,3,44,22,
-        0,169,41,1,0,0,0,170,171,5,16,0,0,171,173,5,41,0,0,172,174,3,68,
-        34,0,173,172,1,0,0,0,173,174,1,0,0,0,174,43,1,0,0,0,175,177,5,17,
-        0,0,176,178,3,2,1,0,177,176,1,0,0,0,178,179,1,0,0,0,179,177,1,0,
-        0,0,179,180,1,0,0,0,180,181,1,0,0,0,181,182,5,18,0,0,182,185,1,0,
-        0,0,183,185,3,2,1,0,184,175,1,0,0,0,184,183,1,0,0,0,185,45,1,0,0,
-        0,186,189,3,48,24,0,187,189,3,50,25,0,188,186,1,0,0,0,188,187,1,
-        0,0,0,189,47,1,0,0,0,190,191,5,19,0,0,191,192,5,41,0,0,192,49,1,
-        0,0,0,193,194,5,20,0,0,194,195,5,41,0,0,195,51,1,0,0,0,196,197,7,
-        0,0,0,197,53,1,0,0,0,198,202,3,56,28,0,199,202,3,58,29,0,200,202,
-        3,60,30,0,201,198,1,0,0,0,201,199,1,0,0,0,201,200,1,0,0,0,202,55,
-        1,0,0,0,203,204,5,21,0,0,204,205,3,70,35,0,205,57,1,0,0,0,206,207,
-        5,9,0,0,207,208,3,70,35,0,208,59,1,0,0,0,209,211,5,22,0,0,210,212,
-        5,9,0,0,211,210,1,0,0,0,211,212,1,0,0,0,212,213,1,0,0,0,213,214,
-        3,70,35,0,214,61,1,0,0,0,215,216,7,1,0,0,216,63,1,0,0,0,217,218,
-        5,23,0,0,218,219,5,41,0,0,219,65,1,0,0,0,220,221,5,24,0,0,221,226,
-        5,41,0,0,222,223,5,25,0,0,223,225,5,41,0,0,224,222,1,0,0,0,225,228,
-        1,0,0,0,226,224,1,0,0,0,226,227,1,0,0,0,227,229,1,0,0,0,228,226,
-        1,0,0,0,229,230,5,26,0,0,230,67,1,0,0,0,231,234,5,24,0,0,232,235,
-        5,41,0,0,233,235,3,70,35,0,234,232,1,0,0,0,234,233,1,0,0,0,235,243,
-        1,0,0,0,236,239,5,25,0,0,237,240,5,41,0,0,238,240,3,70,35,0,239,
-        237,1,0,0,0,239,238,1,0,0,0,240,242,1,0,0,0,241,236,1,0,0,0,242,
-        245,1,0,0,0,243,241,1,0,0,0,243,244,1,0,0,0,244,246,1,0,0,0,245,
-        243,1,0,0,0,246,247,5,26,0,0,247,69,1,0,0,0,248,256,5,39,0,0,249,
-        256,3,72,36,0,250,256,3,64,32,0,251,252,5,27,0,0,252,253,3,70,35,
-        0,253,254,5,27,0,0,254,256,1,0,0,0,255,248,1,0,0,0,255,249,1,0,0,
-        0,255,250,1,0,0,0,255,251,1,0,0,0,256,71,1,0,0,0,257,258,5,28,0,
-        0,258,259,5,41,0,0,259,73,1,0,0,0,21,77,93,99,111,117,133,137,151,
-        161,166,173,179,184,188,201,211,226,234,239,243,255
+        7,33,2,34,7,34,2,35,7,35,2,36,7,36,2,37,7,37,2,38,7,38,2,39,7,39,
+        1,0,5,0,82,8,0,10,0,12,0,85,9,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+        1,1,1,1,1,1,1,1,1,1,1,1,3,1,101,8,1,1,2,1,2,1,3,1,3,3,3,107,8,3,
+        1,4,1,4,1,4,1,5,1,5,1,6,1,6,1,7,1,7,1,7,3,7,119,8,7,1,8,1,8,4,8,
+        123,8,8,11,8,12,8,124,1,9,1,9,1,9,1,9,1,10,1,10,1,10,1,11,1,11,1,
+        11,1,11,1,12,1,12,3,12,140,8,12,1,13,1,13,1,13,1,13,1,14,1,14,1,
+        14,1,14,1,15,1,15,1,15,3,15,153,8,15,1,16,1,16,3,16,157,8,16,1,16,
+        1,16,1,16,1,16,1,17,1,17,1,17,1,18,1,18,1,18,1,19,1,19,3,19,171,
+        8,19,1,20,1,20,1,20,1,21,1,21,1,21,1,22,1,22,3,22,181,8,22,1,23,
+        1,23,1,23,3,23,186,8,23,1,23,1,23,1,24,1,24,1,24,3,24,193,8,24,1,
+        25,1,25,4,25,197,8,25,11,25,12,25,198,1,25,1,25,1,25,3,25,204,8,
+        25,1,26,1,26,3,26,208,8,26,1,27,1,27,1,27,1,28,1,28,1,28,1,29,1,
+        29,1,30,1,30,1,30,3,30,221,8,30,1,31,1,31,1,31,1,32,1,32,1,32,1,
+        33,1,33,3,33,231,8,33,1,33,1,33,1,34,1,34,1,35,1,35,1,35,1,36,1,
+        36,1,36,1,36,5,36,244,8,36,10,36,12,36,247,9,36,1,36,1,36,1,37,1,
+        37,1,37,3,37,254,8,37,1,37,1,37,1,37,3,37,259,8,37,5,37,261,8,37,
+        10,37,12,37,264,9,37,1,37,1,37,1,38,1,38,1,38,1,38,1,38,1,38,1,38,
+        3,38,275,8,38,1,39,1,39,1,39,1,39,0,0,40,0,2,4,6,8,10,12,14,16,18,
+        20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,
+        64,66,68,70,72,74,76,78,0,2,1,0,31,34,1,0,35,40,278,0,83,1,0,0,0,
+        2,100,1,0,0,0,4,102,1,0,0,0,6,106,1,0,0,0,8,108,1,0,0,0,10,111,1,
+        0,0,0,12,113,1,0,0,0,14,118,1,0,0,0,16,120,1,0,0,0,18,126,1,0,0,
+        0,20,130,1,0,0,0,22,133,1,0,0,0,24,139,1,0,0,0,26,141,1,0,0,0,28,
+        145,1,0,0,0,30,152,1,0,0,0,32,154,1,0,0,0,34,162,1,0,0,0,36,165,
+        1,0,0,0,38,170,1,0,0,0,40,172,1,0,0,0,42,175,1,0,0,0,44,180,1,0,
+        0,0,46,182,1,0,0,0,48,189,1,0,0,0,50,203,1,0,0,0,52,207,1,0,0,0,
+        54,209,1,0,0,0,56,212,1,0,0,0,58,215,1,0,0,0,60,220,1,0,0,0,62,222,
+        1,0,0,0,64,225,1,0,0,0,66,228,1,0,0,0,68,234,1,0,0,0,70,236,1,0,
+        0,0,72,239,1,0,0,0,74,250,1,0,0,0,76,274,1,0,0,0,78,276,1,0,0,0,
+        80,82,3,2,1,0,81,80,1,0,0,0,82,85,1,0,0,0,83,81,1,0,0,0,83,84,1,
+        0,0,0,84,1,1,0,0,0,85,83,1,0,0,0,86,101,3,14,7,0,87,101,3,58,29,
+        0,88,101,3,60,30,0,89,101,3,68,34,0,90,101,3,30,15,0,91,101,3,34,
+        17,0,92,101,3,38,19,0,93,101,3,52,26,0,94,101,3,44,22,0,95,101,3,
+        6,3,0,96,101,3,22,11,0,97,101,3,24,12,0,98,101,3,8,4,0,99,101,3,
+        4,2,0,100,86,1,0,0,0,100,87,1,0,0,0,100,88,1,0,0,0,100,89,1,0,0,
+        0,100,90,1,0,0,0,100,91,1,0,0,0,100,92,1,0,0,0,100,93,1,0,0,0,100,
+        94,1,0,0,0,100,95,1,0,0,0,100,96,1,0,0,0,100,97,1,0,0,0,100,98,1,
+        0,0,0,100,99,1,0,0,0,101,3,1,0,0,0,102,103,5,1,0,0,103,5,1,0,0,0,
+        104,107,3,10,5,0,105,107,3,12,6,0,106,104,1,0,0,0,106,105,1,0,0,
+        0,107,7,1,0,0,0,108,109,5,2,0,0,109,110,5,42,0,0,110,9,1,0,0,0,111,
+        112,5,3,0,0,112,11,1,0,0,0,113,114,5,4,0,0,114,13,1,0,0,0,115,119,
+        3,20,10,0,116,119,3,16,8,0,117,119,3,18,9,0,118,115,1,0,0,0,118,
+        116,1,0,0,0,118,117,1,0,0,0,119,15,1,0,0,0,120,122,5,5,0,0,121,123,
+        5,41,0,0,122,121,1,0,0,0,123,124,1,0,0,0,124,122,1,0,0,0,124,125,
+        1,0,0,0,125,17,1,0,0,0,126,127,5,6,0,0,127,128,5,41,0,0,128,129,
+        5,41,0,0,129,19,1,0,0,0,130,131,5,5,0,0,131,132,5,42,0,0,132,21,
+        1,0,0,0,133,134,5,43,0,0,134,135,5,7,0,0,135,136,3,76,38,0,136,23,
+        1,0,0,0,137,140,3,26,13,0,138,140,3,28,14,0,139,137,1,0,0,0,139,
+        138,1,0,0,0,140,25,1,0,0,0,141,142,5,43,0,0,142,143,5,8,0,0,143,
+        144,3,76,38,0,144,27,1,0,0,0,145,146,5,43,0,0,146,147,5,9,0,0,147,
+        148,3,76,38,0,148,29,1,0,0,0,149,153,3,32,16,0,150,153,3,34,17,0,
+        151,153,3,36,18,0,152,149,1,0,0,0,152,150,1,0,0,0,152,151,1,0,0,
+        0,153,31,1,0,0,0,154,156,5,10,0,0,155,157,5,11,0,0,156,155,1,0,0,
+        0,156,157,1,0,0,0,157,158,1,0,0,0,158,159,3,76,38,0,159,160,5,12,
+        0,0,160,161,3,50,25,0,161,33,1,0,0,0,162,163,5,13,0,0,163,164,3,
+        50,25,0,164,35,1,0,0,0,165,166,5,14,0,0,166,167,3,50,25,0,167,37,
+        1,0,0,0,168,171,3,40,20,0,169,171,3,42,21,0,170,168,1,0,0,0,170,
+        169,1,0,0,0,171,39,1,0,0,0,172,173,5,15,0,0,173,174,3,50,25,0,174,
+        41,1,0,0,0,175,176,5,16,0,0,176,177,3,50,25,0,177,43,1,0,0,0,178,
+        181,3,46,23,0,179,181,3,48,24,0,180,178,1,0,0,0,180,179,1,0,0,0,
+        181,45,1,0,0,0,182,183,5,17,0,0,183,185,5,43,0,0,184,186,3,72,36,
+        0,185,184,1,0,0,0,185,186,1,0,0,0,186,187,1,0,0,0,187,188,3,50,25,
+        0,188,47,1,0,0,0,189,190,5,18,0,0,190,192,5,43,0,0,191,193,3,74,
+        37,0,192,191,1,0,0,0,192,193,1,0,0,0,193,49,1,0,0,0,194,196,5,19,
+        0,0,195,197,3,2,1,0,196,195,1,0,0,0,197,198,1,0,0,0,198,196,1,0,
+        0,0,198,199,1,0,0,0,199,200,1,0,0,0,200,201,5,20,0,0,201,204,1,0,
+        0,0,202,204,3,2,1,0,203,194,1,0,0,0,203,202,1,0,0,0,204,51,1,0,0,
+        0,205,208,3,54,27,0,206,208,3,56,28,0,207,205,1,0,0,0,207,206,1,
+        0,0,0,208,53,1,0,0,0,209,210,5,21,0,0,210,211,5,43,0,0,211,55,1,
+        0,0,0,212,213,5,22,0,0,213,214,5,43,0,0,214,57,1,0,0,0,215,216,7,
+        0,0,0,216,59,1,0,0,0,217,221,3,62,31,0,218,221,3,64,32,0,219,221,
+        3,66,33,0,220,217,1,0,0,0,220,218,1,0,0,0,220,219,1,0,0,0,221,61,
+        1,0,0,0,222,223,5,23,0,0,223,224,3,76,38,0,224,63,1,0,0,0,225,226,
+        5,11,0,0,226,227,3,76,38,0,227,65,1,0,0,0,228,230,5,24,0,0,229,231,
+        5,11,0,0,230,229,1,0,0,0,230,231,1,0,0,0,231,232,1,0,0,0,232,233,
+        3,76,38,0,233,67,1,0,0,0,234,235,7,1,0,0,235,69,1,0,0,0,236,237,
+        5,25,0,0,237,238,5,43,0,0,238,71,1,0,0,0,239,240,5,26,0,0,240,245,
+        5,43,0,0,241,242,5,27,0,0,242,244,5,43,0,0,243,241,1,0,0,0,244,247,
+        1,0,0,0,245,243,1,0,0,0,245,246,1,0,0,0,246,248,1,0,0,0,247,245,
+        1,0,0,0,248,249,5,28,0,0,249,73,1,0,0,0,250,253,5,26,0,0,251,254,
+        5,43,0,0,252,254,3,76,38,0,253,251,1,0,0,0,253,252,1,0,0,0,254,262,
+        1,0,0,0,255,258,5,27,0,0,256,259,5,43,0,0,257,259,3,76,38,0,258,
+        256,1,0,0,0,258,257,1,0,0,0,259,261,1,0,0,0,260,255,1,0,0,0,261,
+        264,1,0,0,0,262,260,1,0,0,0,262,263,1,0,0,0,263,265,1,0,0,0,264,
+        262,1,0,0,0,265,266,5,28,0,0,266,75,1,0,0,0,267,275,5,41,0,0,268,
+        275,3,78,39,0,269,275,3,70,35,0,270,271,5,29,0,0,271,272,3,76,38,
+        0,272,273,5,29,0,0,273,275,1,0,0,0,274,267,1,0,0,0,274,268,1,0,0,
+        0,274,269,1,0,0,0,274,270,1,0,0,0,275,77,1,0,0,0,276,277,5,30,0,
+        0,277,278,5,43,0,0,278,79,1,0,0,0,22,83,100,106,118,124,139,152,
+        156,170,180,185,192,198,203,207,220,230,245,253,258,262,274
     ]
 
 class asteroideaParser ( Parser ):
@@ -111,11 +118,11 @@ class asteroideaParser ( Parser ):
     sharedContextCache = PredictionContextCache()
 
     literalNames = [ "<INVALID>", "'H'", "'&&'", "'[===]'", "'[%%%]'", "'#'", 
-                     "'##'", "':='", "'['", "'-'", "']'", "'?'", "'!?'", 
-                     "'??'", "'!??'", "'&'", "'*'", "'('", "')'", "'@'", 
-                     "'^'", "'+'", "'~'", "'$'", "'<'", "','", "'>'", "'|'", 
-                     "'^^'", "'<-'", "'->'", "'<<'", "'>>'", "'=>'", "'<='", 
-                     "'<>'", "'%>'", "'<%'", "'<%>'" ]
+                     "'##'", "':='", "'+='", "'-='", "'['", "'-'", "']'", 
+                     "'?'", "'!?'", "'??'", "'!??'", "'&'", "'*'", "'('", 
+                     "')'", "'@'", "'^'", "'+'", "'~'", "'$'", "'<'", "','", 
+                     "'>'", "'|'", "'^^'", "'<-'", "'->'", "'<<'", "'>>'", 
+                     "'=>'", "'<='", "'<>'", "'%>'", "'<%'", "'<%>'" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
@@ -124,10 +131,11 @@ class asteroideaParser ( Parser ):
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "MOVE_LEFT_OP", "MOVE_RIGHT_OP", "MOVE_START_OP", 
-                      "MOVE_END_OP", "READ_CHAR_OP", "PRINT_CHAR_OP", "PRINT_MOVE_CHAR_OP", 
-                      "READ_INT_OP", "PRINT_INT_OP", "PRINT_MOVE_INT_OP", 
-                      "NUM", "STRING", "IDENTIFIER", "WS", "COMMENT" ]
+                      "<INVALID>", "<INVALID>", "<INVALID>", "MOVE_LEFT_OP", 
+                      "MOVE_RIGHT_OP", "MOVE_START_OP", "MOVE_END_OP", "READ_CHAR_OP", 
+                      "PRINT_CHAR_OP", "PRINT_MOVE_CHAR_OP", "READ_INT_OP", 
+                      "PRINT_INT_OP", "PRINT_MOVE_INT_OP", "NUM", "STRING", 
+                      "IDENTIFIER", "WS", "COMMENT" ]
 
     RULE_prog = 0
     RULE_stmt = 1
@@ -141,35 +149,39 @@ class asteroideaParser ( Parser ):
     RULE_setTapeLengthOp = 9
     RULE_setTapeStringOp = 10
     RULE_setVarOp = 11
-    RULE_loopStatement = 12
-    RULE_repeatStatement = 13
-    RULE_whileStatement = 14
-    RULE_untilStatement = 15
-    RULE_conditionalStatement = 16
-    RULE_ifStatement = 17
-    RULE_unlessStatement = 18
-    RULE_functionStatement = 19
-    RULE_functionDefinitionStatement = 20
-    RULE_functionCallStatement = 21
-    RULE_scope = 22
-    RULE_jumpStatement = 23
-    RULE_bookmarkStatement = 24
-    RULE_jumpToStatement = 25
-    RULE_moveOp = 26
-    RULE_modifyCellOp = 27
-    RULE_increaseOp = 28
-    RULE_decreaseOp = 29
-    RULE_setValOp = 30
-    RULE_ioOp = 31
-    RULE_parameterOp = 32
-    RULE_defParams = 33
-    RULE_callParams = 34
-    RULE_number = 35
-    RULE_lookupOp = 36
+    RULE_modifyVarOp = 12
+    RULE_incrementVarOp = 13
+    RULE_decrementVarOp = 14
+    RULE_loopStatement = 15
+    RULE_repeatStatement = 16
+    RULE_whileStatement = 17
+    RULE_untilStatement = 18
+    RULE_conditionalStatement = 19
+    RULE_ifStatement = 20
+    RULE_unlessStatement = 21
+    RULE_functionStatement = 22
+    RULE_functionDefinitionStatement = 23
+    RULE_functionCallStatement = 24
+    RULE_scope = 25
+    RULE_jumpStatement = 26
+    RULE_bookmarkStatement = 27
+    RULE_jumpToStatement = 28
+    RULE_moveOp = 29
+    RULE_modifyCellOp = 30
+    RULE_increaseOp = 31
+    RULE_decreaseOp = 32
+    RULE_setValOp = 33
+    RULE_ioOp = 34
+    RULE_parameterOp = 35
+    RULE_defParams = 36
+    RULE_callParams = 37
+    RULE_number = 38
+    RULE_lookupOp = 39
 
     ruleNames =  [ "prog", "stmt", "haltOp", "debugOp", "importStatement", 
                    "showTapeBytesOp", "showTapeValsOp", "setTapeOp", "setTapeCellsOp", 
-                   "setTapeLengthOp", "setTapeStringOp", "setVarOp", "loopStatement", 
+                   "setTapeLengthOp", "setTapeStringOp", "setVarOp", "modifyVarOp", 
+                   "incrementVarOp", "decrementVarOp", "loopStatement", 
                    "repeatStatement", "whileStatement", "untilStatement", 
                    "conditionalStatement", "ifStatement", "unlessStatement", 
                    "functionStatement", "functionDefinitionStatement", "functionCallStatement", 
@@ -207,21 +219,23 @@ class asteroideaParser ( Parser ):
     T__25=26
     T__26=27
     T__27=28
-    MOVE_LEFT_OP=29
-    MOVE_RIGHT_OP=30
-    MOVE_START_OP=31
-    MOVE_END_OP=32
-    READ_CHAR_OP=33
-    PRINT_CHAR_OP=34
-    PRINT_MOVE_CHAR_OP=35
-    READ_INT_OP=36
-    PRINT_INT_OP=37
-    PRINT_MOVE_INT_OP=38
-    NUM=39
-    STRING=40
-    IDENTIFIER=41
-    WS=42
-    COMMENT=43
+    T__28=29
+    T__29=30
+    MOVE_LEFT_OP=31
+    MOVE_RIGHT_OP=32
+    MOVE_START_OP=33
+    MOVE_END_OP=34
+    READ_CHAR_OP=35
+    PRINT_CHAR_OP=36
+    PRINT_MOVE_CHAR_OP=37
+    READ_INT_OP=38
+    PRINT_INT_OP=39
+    PRINT_MOVE_INT_OP=40
+    NUM=41
+    STRING=42
+    IDENTIFIER=43
+    WS=44
+    COMMENT=45
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -273,13 +287,13 @@ class asteroideaParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 77
+            self.state = 83
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while ((_la) & ~0x3f) == 0 and ((1 << _la) & 2748250192766) != 0:
-                self.state = 74
+            while ((_la) & ~0x3f) == 0 and ((1 << _la) & 10993000770686) != 0:
+                self.state = 80
                 self.stmt()
-                self.state = 79
+                self.state = 85
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -343,6 +357,10 @@ class asteroideaParser ( Parser ):
             return self.getTypedRuleContext(asteroideaParser.SetVarOpContext,0)
 
 
+        def modifyVarOp(self):
+            return self.getTypedRuleContext(asteroideaParser.ModifyVarOpContext,0)
+
+
         def importStatement(self):
             return self.getTypedRuleContext(asteroideaParser.ImportStatementContext,0)
 
@@ -376,84 +394,90 @@ class asteroideaParser ( Parser ):
         localctx = asteroideaParser.StmtContext(self, self._ctx, self.state)
         self.enterRule(localctx, 2, self.RULE_stmt)
         try:
-            self.state = 93
+            self.state = 100
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,1,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 80
+                self.state = 86
                 self.setTapeOp()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 81
+                self.state = 87
                 self.moveOp()
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 82
+                self.state = 88
                 self.modifyCellOp()
                 pass
 
             elif la_ == 4:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 83
+                self.state = 89
                 self.ioOp()
                 pass
 
             elif la_ == 5:
                 self.enterOuterAlt(localctx, 5)
-                self.state = 84
+                self.state = 90
                 self.loopStatement()
                 pass
 
             elif la_ == 6:
                 self.enterOuterAlt(localctx, 6)
-                self.state = 85
+                self.state = 91
                 self.whileStatement()
                 pass
 
             elif la_ == 7:
                 self.enterOuterAlt(localctx, 7)
-                self.state = 86
+                self.state = 92
                 self.conditionalStatement()
                 pass
 
             elif la_ == 8:
                 self.enterOuterAlt(localctx, 8)
-                self.state = 87
+                self.state = 93
                 self.jumpStatement()
                 pass
 
             elif la_ == 9:
                 self.enterOuterAlt(localctx, 9)
-                self.state = 88
+                self.state = 94
                 self.functionStatement()
                 pass
 
             elif la_ == 10:
                 self.enterOuterAlt(localctx, 10)
-                self.state = 89
+                self.state = 95
                 self.debugOp()
                 pass
 
             elif la_ == 11:
                 self.enterOuterAlt(localctx, 11)
-                self.state = 90
+                self.state = 96
                 self.setVarOp()
                 pass
 
             elif la_ == 12:
                 self.enterOuterAlt(localctx, 12)
-                self.state = 91
-                self.importStatement()
+                self.state = 97
+                self.modifyVarOp()
                 pass
 
             elif la_ == 13:
                 self.enterOuterAlt(localctx, 13)
-                self.state = 92
+                self.state = 98
+                self.importStatement()
+                pass
+
+            elif la_ == 14:
+                self.enterOuterAlt(localctx, 14)
+                self.state = 99
                 self.haltOp()
                 pass
 
@@ -501,7 +525,7 @@ class asteroideaParser ( Parser ):
         self.enterRule(localctx, 4, self.RULE_haltOp)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 95
+            self.state = 102
             self.match(asteroideaParser.T__0)
         except RecognitionException as re:
             localctx.exception = re
@@ -552,17 +576,17 @@ class asteroideaParser ( Parser ):
         localctx = asteroideaParser.DebugOpContext(self, self._ctx, self.state)
         self.enterRule(localctx, 6, self.RULE_debugOp)
         try:
-            self.state = 99
+            self.state = 106
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [3]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 97
+                self.state = 104
                 self.showTapeBytesOp()
                 pass
             elif token in [4]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 98
+                self.state = 105
                 self.showTapeValsOp()
                 pass
             else:
@@ -614,9 +638,9 @@ class asteroideaParser ( Parser ):
         self.enterRule(localctx, 8, self.RULE_importStatement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 101
+            self.state = 108
             self.match(asteroideaParser.T__1)
-            self.state = 102
+            self.state = 109
             localctx.loc = self.match(asteroideaParser.STRING)
         except RecognitionException as re:
             localctx.exception = re
@@ -661,7 +685,7 @@ class asteroideaParser ( Parser ):
         self.enterRule(localctx, 10, self.RULE_showTapeBytesOp)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 104
+            self.state = 111
             self.match(asteroideaParser.T__2)
         except RecognitionException as re:
             localctx.exception = re
@@ -706,7 +730,7 @@ class asteroideaParser ( Parser ):
         self.enterRule(localctx, 12, self.RULE_showTapeValsOp)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 106
+            self.state = 113
             self.match(asteroideaParser.T__3)
         except RecognitionException as re:
             localctx.exception = re
@@ -761,24 +785,24 @@ class asteroideaParser ( Parser ):
         localctx = asteroideaParser.SetTapeOpContext(self, self._ctx, self.state)
         self.enterRule(localctx, 14, self.RULE_setTapeOp)
         try:
-            self.state = 111
+            self.state = 118
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,3,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 108
+                self.state = 115
                 self.setTapeStringOp()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 109
+                self.state = 116
                 self.setTapeCellsOp()
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 110
+                self.state = 117
                 self.setTapeLengthOp()
                 pass
 
@@ -832,18 +856,18 @@ class asteroideaParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 113
+            self.state = 120
             self.match(asteroideaParser.T__4)
-            self.state = 115 
+            self.state = 122 
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while True:
-                self.state = 114
+                self.state = 121
                 self.match(asteroideaParser.NUM)
-                self.state = 117 
+                self.state = 124 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if not (_la==39):
+                if not (_la==41):
                     break
 
         except RecognitionException as re:
@@ -896,11 +920,11 @@ class asteroideaParser ( Parser ):
         self.enterRule(localctx, 18, self.RULE_setTapeLengthOp)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 119
+            self.state = 126
             self.match(asteroideaParser.T__5)
-            self.state = 120
+            self.state = 127
             localctx.cells = self.match(asteroideaParser.NUM)
-            self.state = 121
+            self.state = 128
             localctx.values = self.match(asteroideaParser.NUM)
         except RecognitionException as re:
             localctx.exception = re
@@ -948,9 +972,9 @@ class asteroideaParser ( Parser ):
         self.enterRule(localctx, 20, self.RULE_setTapeStringOp)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 123
+            self.state = 130
             self.match(asteroideaParser.T__4)
-            self.state = 124
+            self.state = 131
             localctx.string = self.match(asteroideaParser.STRING)
         except RecognitionException as re:
             localctx.exception = re
@@ -1003,11 +1027,190 @@ class asteroideaParser ( Parser ):
         self.enterRule(localctx, 22, self.RULE_setVarOp)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 126
+            self.state = 133
             localctx.name = self.match(asteroideaParser.IDENTIFIER)
-            self.state = 127
+            self.state = 134
             self.match(asteroideaParser.T__6)
-            self.state = 128
+            self.state = 135
+            localctx.val = self.number()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class ModifyVarOpContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def incrementVarOp(self):
+            return self.getTypedRuleContext(asteroideaParser.IncrementVarOpContext,0)
+
+
+        def decrementVarOp(self):
+            return self.getTypedRuleContext(asteroideaParser.DecrementVarOpContext,0)
+
+
+        def getRuleIndex(self):
+            return asteroideaParser.RULE_modifyVarOp
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterModifyVarOp" ):
+                listener.enterModifyVarOp(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitModifyVarOp" ):
+                listener.exitModifyVarOp(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitModifyVarOp" ):
+                return visitor.visitModifyVarOp(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def modifyVarOp(self):
+
+        localctx = asteroideaParser.ModifyVarOpContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 24, self.RULE_modifyVarOp)
+        try:
+            self.state = 139
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,5,self._ctx)
+            if la_ == 1:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 137
+                self.incrementVarOp()
+                pass
+
+            elif la_ == 2:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 138
+                self.decrementVarOp()
+                pass
+
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class IncrementVarOpContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+            self.name = None # Token
+            self.val = None # NumberContext
+
+        def IDENTIFIER(self):
+            return self.getToken(asteroideaParser.IDENTIFIER, 0)
+
+        def number(self):
+            return self.getTypedRuleContext(asteroideaParser.NumberContext,0)
+
+
+        def getRuleIndex(self):
+            return asteroideaParser.RULE_incrementVarOp
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterIncrementVarOp" ):
+                listener.enterIncrementVarOp(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitIncrementVarOp" ):
+                listener.exitIncrementVarOp(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitIncrementVarOp" ):
+                return visitor.visitIncrementVarOp(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def incrementVarOp(self):
+
+        localctx = asteroideaParser.IncrementVarOpContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 26, self.RULE_incrementVarOp)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 141
+            localctx.name = self.match(asteroideaParser.IDENTIFIER)
+            self.state = 142
+            self.match(asteroideaParser.T__7)
+            self.state = 143
+            localctx.val = self.number()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class DecrementVarOpContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+            self.name = None # Token
+            self.val = None # NumberContext
+
+        def IDENTIFIER(self):
+            return self.getToken(asteroideaParser.IDENTIFIER, 0)
+
+        def number(self):
+            return self.getTypedRuleContext(asteroideaParser.NumberContext,0)
+
+
+        def getRuleIndex(self):
+            return asteroideaParser.RULE_decrementVarOp
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterDecrementVarOp" ):
+                listener.enterDecrementVarOp(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitDecrementVarOp" ):
+                listener.exitDecrementVarOp(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitDecrementVarOp" ):
+                return visitor.visitDecrementVarOp(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def decrementVarOp(self):
+
+        localctx = asteroideaParser.DecrementVarOpContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 28, self.RULE_decrementVarOp)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 145
+            localctx.name = self.match(asteroideaParser.IDENTIFIER)
+            self.state = 146
+            self.match(asteroideaParser.T__8)
+            self.state = 147
             localctx.val = self.number()
         except RecognitionException as re:
             localctx.exception = re
@@ -1060,24 +1263,24 @@ class asteroideaParser ( Parser ):
     def loopStatement(self):
 
         localctx = asteroideaParser.LoopStatementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 24, self.RULE_loopStatement)
+        self.enterRule(localctx, 30, self.RULE_loopStatement)
         try:
-            self.state = 133
+            self.state = 152
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [8]:
+            if token in [10]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 130
+                self.state = 149
                 self.repeatStatement()
                 pass
-            elif token in [11]:
+            elif token in [13]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 131
+                self.state = 150
                 self.whileStatement()
                 pass
-            elif token in [12]:
+            elif token in [14]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 132
+                self.state = 151
                 self.untilStatement()
                 pass
             else:
@@ -1132,25 +1335,25 @@ class asteroideaParser ( Parser ):
     def repeatStatement(self):
 
         localctx = asteroideaParser.RepeatStatementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 26, self.RULE_repeatStatement)
+        self.enterRule(localctx, 32, self.RULE_repeatStatement)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 135
-            self.match(asteroideaParser.T__7)
-            self.state = 137
+            self.state = 154
+            self.match(asteroideaParser.T__9)
+            self.state = 156
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==9:
-                self.state = 136
-                self.match(asteroideaParser.T__8)
+            if _la==11:
+                self.state = 155
+                self.match(asteroideaParser.T__10)
 
 
-            self.state = 139
+            self.state = 158
             localctx.iterations = self.number()
-            self.state = 140
-            self.match(asteroideaParser.T__9)
-            self.state = 141
+            self.state = 159
+            self.match(asteroideaParser.T__11)
+            self.state = 160
             localctx.block = self.scope()
         except RecognitionException as re:
             localctx.exception = re
@@ -1196,12 +1399,12 @@ class asteroideaParser ( Parser ):
     def whileStatement(self):
 
         localctx = asteroideaParser.WhileStatementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 28, self.RULE_whileStatement)
+        self.enterRule(localctx, 34, self.RULE_whileStatement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 143
-            self.match(asteroideaParser.T__10)
-            self.state = 144
+            self.state = 162
+            self.match(asteroideaParser.T__12)
+            self.state = 163
             localctx.block = self.scope()
         except RecognitionException as re:
             localctx.exception = re
@@ -1247,12 +1450,12 @@ class asteroideaParser ( Parser ):
     def untilStatement(self):
 
         localctx = asteroideaParser.UntilStatementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 30, self.RULE_untilStatement)
+        self.enterRule(localctx, 36, self.RULE_untilStatement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 146
-            self.match(asteroideaParser.T__11)
-            self.state = 147
+            self.state = 165
+            self.match(asteroideaParser.T__13)
+            self.state = 166
             localctx.block = self.scope()
         except RecognitionException as re:
             localctx.exception = re
@@ -1301,19 +1504,19 @@ class asteroideaParser ( Parser ):
     def conditionalStatement(self):
 
         localctx = asteroideaParser.ConditionalStatementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 32, self.RULE_conditionalStatement)
+        self.enterRule(localctx, 38, self.RULE_conditionalStatement)
         try:
-            self.state = 151
+            self.state = 170
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [13]:
+            if token in [15]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 149
+                self.state = 168
                 self.ifStatement()
                 pass
-            elif token in [14]:
+            elif token in [16]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 150
+                self.state = 169
                 self.unlessStatement()
                 pass
             else:
@@ -1363,12 +1566,12 @@ class asteroideaParser ( Parser ):
     def ifStatement(self):
 
         localctx = asteroideaParser.IfStatementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 34, self.RULE_ifStatement)
+        self.enterRule(localctx, 40, self.RULE_ifStatement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 153
-            self.match(asteroideaParser.T__12)
-            self.state = 154
+            self.state = 172
+            self.match(asteroideaParser.T__14)
+            self.state = 173
             localctx.block = self.scope()
         except RecognitionException as re:
             localctx.exception = re
@@ -1414,12 +1617,12 @@ class asteroideaParser ( Parser ):
     def unlessStatement(self):
 
         localctx = asteroideaParser.UnlessStatementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 36, self.RULE_unlessStatement)
+        self.enterRule(localctx, 42, self.RULE_unlessStatement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 156
-            self.match(asteroideaParser.T__13)
-            self.state = 157
+            self.state = 175
+            self.match(asteroideaParser.T__15)
+            self.state = 176
             localctx.block = self.scope()
         except RecognitionException as re:
             localctx.exception = re
@@ -1468,19 +1671,19 @@ class asteroideaParser ( Parser ):
     def functionStatement(self):
 
         localctx = asteroideaParser.FunctionStatementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 38, self.RULE_functionStatement)
+        self.enterRule(localctx, 44, self.RULE_functionStatement)
         try:
-            self.state = 161
+            self.state = 180
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [15]:
+            if token in [17]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 159
+                self.state = 178
                 self.functionDefinitionStatement()
                 pass
-            elif token in [16]:
+            elif token in [18]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 160
+                self.state = 179
                 self.functionCallStatement()
                 pass
             else:
@@ -1538,23 +1741,23 @@ class asteroideaParser ( Parser ):
     def functionDefinitionStatement(self):
 
         localctx = asteroideaParser.FunctionDefinitionStatementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 40, self.RULE_functionDefinitionStatement)
+        self.enterRule(localctx, 46, self.RULE_functionDefinitionStatement)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 163
-            self.match(asteroideaParser.T__14)
-            self.state = 164
+            self.state = 182
+            self.match(asteroideaParser.T__16)
+            self.state = 183
             localctx.name = self.match(asteroideaParser.IDENTIFIER)
-            self.state = 166
+            self.state = 185
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==24:
-                self.state = 165
+            if _la==26:
+                self.state = 184
                 self.defParams()
 
 
-            self.state = 168
+            self.state = 187
             localctx.block = self.scope()
         except RecognitionException as re:
             localctx.exception = re
@@ -1603,19 +1806,19 @@ class asteroideaParser ( Parser ):
     def functionCallStatement(self):
 
         localctx = asteroideaParser.FunctionCallStatementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 42, self.RULE_functionCallStatement)
+        self.enterRule(localctx, 48, self.RULE_functionCallStatement)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 170
-            self.match(asteroideaParser.T__15)
-            self.state = 171
+            self.state = 189
+            self.match(asteroideaParser.T__17)
+            self.state = 190
             localctx.name = self.match(asteroideaParser.IDENTIFIER)
-            self.state = 173
+            self.state = 192
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==24:
-                self.state = 172
+            if _la==26:
+                self.state = 191
                 self.callParams()
 
 
@@ -1665,34 +1868,34 @@ class asteroideaParser ( Parser ):
     def scope(self):
 
         localctx = asteroideaParser.ScopeContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 44, self.RULE_scope)
+        self.enterRule(localctx, 50, self.RULE_scope)
         self._la = 0 # Token type
         try:
-            self.state = 184
+            self.state = 203
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [17]:
+            if token in [19]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 175
-                self.match(asteroideaParser.T__16)
-                self.state = 177 
+                self.state = 194
+                self.match(asteroideaParser.T__18)
+                self.state = 196 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 while True:
-                    self.state = 176
+                    self.state = 195
                     self.stmt()
-                    self.state = 179 
+                    self.state = 198 
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
-                    if not (((_la) & ~0x3f) == 0 and ((1 << _la) & 2748250192766) != 0):
+                    if not (((_la) & ~0x3f) == 0 and ((1 << _la) & 10993000770686) != 0):
                         break
 
-                self.state = 181
-                self.match(asteroideaParser.T__17)
+                self.state = 200
+                self.match(asteroideaParser.T__19)
                 pass
-            elif token in [1, 2, 3, 4, 5, 6, 8, 9, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 41]:
+            elif token in [1, 2, 3, 4, 5, 6, 10, 11, 13, 14, 15, 16, 17, 18, 21, 22, 23, 24, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 43]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 183
+                self.state = 202
                 self.stmt()
                 pass
             else:
@@ -1745,19 +1948,19 @@ class asteroideaParser ( Parser ):
     def jumpStatement(self):
 
         localctx = asteroideaParser.JumpStatementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 46, self.RULE_jumpStatement)
+        self.enterRule(localctx, 52, self.RULE_jumpStatement)
         try:
-            self.state = 188
+            self.state = 207
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [19]:
+            if token in [21]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 186
+                self.state = 205
                 self.bookmarkStatement()
                 pass
-            elif token in [20]:
+            elif token in [22]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 187
+                self.state = 206
                 self.jumpToStatement()
                 pass
             else:
@@ -1806,12 +2009,12 @@ class asteroideaParser ( Parser ):
     def bookmarkStatement(self):
 
         localctx = asteroideaParser.BookmarkStatementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 48, self.RULE_bookmarkStatement)
+        self.enterRule(localctx, 54, self.RULE_bookmarkStatement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 190
-            self.match(asteroideaParser.T__18)
-            self.state = 191
+            self.state = 209
+            self.match(asteroideaParser.T__20)
+            self.state = 210
             localctx.name = self.match(asteroideaParser.IDENTIFIER)
         except RecognitionException as re:
             localctx.exception = re
@@ -1856,12 +2059,12 @@ class asteroideaParser ( Parser ):
     def jumpToStatement(self):
 
         localctx = asteroideaParser.JumpToStatementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 50, self.RULE_jumpToStatement)
+        self.enterRule(localctx, 56, self.RULE_jumpToStatement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 193
-            self.match(asteroideaParser.T__19)
-            self.state = 194
+            self.state = 212
+            self.match(asteroideaParser.T__21)
+            self.state = 213
             localctx.name = self.match(asteroideaParser.IDENTIFIER)
         except RecognitionException as re:
             localctx.exception = re
@@ -1915,14 +2118,14 @@ class asteroideaParser ( Parser ):
     def moveOp(self):
 
         localctx = asteroideaParser.MoveOpContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 52, self.RULE_moveOp)
+        self.enterRule(localctx, 58, self.RULE_moveOp)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 196
+            self.state = 215
             localctx.op = self._input.LT(1)
             _la = self._input.LA(1)
-            if not(((_la) & ~0x3f) == 0 and ((1 << _la) & 8053063680) != 0):
+            if not(((_la) & ~0x3f) == 0 and ((1 << _la) & 32212254720) != 0):
                 localctx.op = self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -1978,24 +2181,24 @@ class asteroideaParser ( Parser ):
     def modifyCellOp(self):
 
         localctx = asteroideaParser.ModifyCellOpContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 54, self.RULE_modifyCellOp)
+        self.enterRule(localctx, 60, self.RULE_modifyCellOp)
         try:
-            self.state = 201
+            self.state = 220
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [21]:
+            if token in [23]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 198
+                self.state = 217
                 self.increaseOp()
                 pass
-            elif token in [9]:
+            elif token in [11]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 199
+                self.state = 218
                 self.decreaseOp()
                 pass
-            elif token in [22]:
+            elif token in [24]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 200
+                self.state = 219
                 self.setValOp()
                 pass
             else:
@@ -2046,12 +2249,12 @@ class asteroideaParser ( Parser ):
     def increaseOp(self):
 
         localctx = asteroideaParser.IncreaseOpContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 56, self.RULE_increaseOp)
+        self.enterRule(localctx, 62, self.RULE_increaseOp)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 203
-            localctx.op = self.match(asteroideaParser.T__20)
-            self.state = 204
+            self.state = 222
+            localctx.op = self.match(asteroideaParser.T__22)
+            self.state = 223
             localctx.val = self.number()
         except RecognitionException as re:
             localctx.exception = re
@@ -2098,12 +2301,12 @@ class asteroideaParser ( Parser ):
     def decreaseOp(self):
 
         localctx = asteroideaParser.DecreaseOpContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 58, self.RULE_decreaseOp)
+        self.enterRule(localctx, 64, self.RULE_decreaseOp)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 206
-            localctx.op = self.match(asteroideaParser.T__8)
-            self.state = 207
+            self.state = 225
+            localctx.op = self.match(asteroideaParser.T__10)
+            self.state = 226
             localctx.val = self.number()
         except RecognitionException as re:
             localctx.exception = re
@@ -2150,21 +2353,21 @@ class asteroideaParser ( Parser ):
     def setValOp(self):
 
         localctx = asteroideaParser.SetValOpContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 60, self.RULE_setValOp)
+        self.enterRule(localctx, 66, self.RULE_setValOp)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 209
-            localctx.op = self.match(asteroideaParser.T__21)
-            self.state = 211
+            self.state = 228
+            localctx.op = self.match(asteroideaParser.T__23)
+            self.state = 230
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==9:
-                self.state = 210
-                self.match(asteroideaParser.T__8)
+            if _la==11:
+                self.state = 229
+                self.match(asteroideaParser.T__10)
 
 
-            self.state = 213
+            self.state = 232
             localctx.val = self.number()
         except RecognitionException as re:
             localctx.exception = re
@@ -2224,14 +2427,14 @@ class asteroideaParser ( Parser ):
     def ioOp(self):
 
         localctx = asteroideaParser.IoOpContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 62, self.RULE_ioOp)
+        self.enterRule(localctx, 68, self.RULE_ioOp)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 215
+            self.state = 234
             localctx.op = self._input.LT(1)
             _la = self._input.LA(1)
-            if not(((_la) & ~0x3f) == 0 and ((1 << _la) & 541165879296) != 0):
+            if not(((_la) & ~0x3f) == 0 and ((1 << _la) & 2164663517184) != 0):
                 localctx.op = self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -2279,12 +2482,12 @@ class asteroideaParser ( Parser ):
     def parameterOp(self):
 
         localctx = asteroideaParser.ParameterOpContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 64, self.RULE_parameterOp)
+        self.enterRule(localctx, 70, self.RULE_parameterOp)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 217
-            self.match(asteroideaParser.T__22)
-            self.state = 218
+            self.state = 236
+            self.match(asteroideaParser.T__24)
+            self.state = 237
             localctx.name = self.match(asteroideaParser.IDENTIFIER)
         except RecognitionException as re:
             localctx.exception = re
@@ -2331,28 +2534,28 @@ class asteroideaParser ( Parser ):
     def defParams(self):
 
         localctx = asteroideaParser.DefParamsContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 66, self.RULE_defParams)
+        self.enterRule(localctx, 72, self.RULE_defParams)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 220
-            self.match(asteroideaParser.T__23)
-            self.state = 221
+            self.state = 239
+            self.match(asteroideaParser.T__25)
+            self.state = 240
             self.match(asteroideaParser.IDENTIFIER)
-            self.state = 226
+            self.state = 245
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==25:
-                self.state = 222
-                self.match(asteroideaParser.T__24)
-                self.state = 223
+            while _la==27:
+                self.state = 241
+                self.match(asteroideaParser.T__26)
+                self.state = 242
                 self.match(asteroideaParser.IDENTIFIER)
-                self.state = 228
+                self.state = 247
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 229
-            self.match(asteroideaParser.T__25)
+            self.state = 248
+            self.match(asteroideaParser.T__27)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -2405,52 +2608,52 @@ class asteroideaParser ( Parser ):
     def callParams(self):
 
         localctx = asteroideaParser.CallParamsContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 68, self.RULE_callParams)
+        self.enterRule(localctx, 74, self.RULE_callParams)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 231
-            self.match(asteroideaParser.T__23)
-            self.state = 234
+            self.state = 250
+            self.match(asteroideaParser.T__25)
+            self.state = 253
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [41]:
-                self.state = 232
+            if token in [43]:
+                self.state = 251
                 self.match(asteroideaParser.IDENTIFIER)
                 pass
-            elif token in [23, 27, 28, 39]:
-                self.state = 233
+            elif token in [25, 29, 30, 41]:
+                self.state = 252
                 self.number()
                 pass
             else:
                 raise NoViableAltException(self)
 
-            self.state = 243
+            self.state = 262
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==25:
-                self.state = 236
-                self.match(asteroideaParser.T__24)
-                self.state = 239
+            while _la==27:
+                self.state = 255
+                self.match(asteroideaParser.T__26)
+                self.state = 258
                 self._errHandler.sync(self)
                 token = self._input.LA(1)
-                if token in [41]:
-                    self.state = 237
+                if token in [43]:
+                    self.state = 256
                     self.match(asteroideaParser.IDENTIFIER)
                     pass
-                elif token in [23, 27, 28, 39]:
-                    self.state = 238
+                elif token in [25, 29, 30, 41]:
+                    self.state = 257
                     self.number()
                     pass
                 else:
                     raise NoViableAltException(self)
 
-                self.state = 245
+                self.state = 264
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 246
-            self.match(asteroideaParser.T__25)
+            self.state = 265
+            self.match(asteroideaParser.T__27)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -2505,34 +2708,34 @@ class asteroideaParser ( Parser ):
     def number(self):
 
         localctx = asteroideaParser.NumberContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 70, self.RULE_number)
+        self.enterRule(localctx, 76, self.RULE_number)
         try:
-            self.state = 255
+            self.state = 274
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [39]:
+            if token in [41]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 248
+                self.state = 267
                 self.match(asteroideaParser.NUM)
                 pass
-            elif token in [28]:
+            elif token in [30]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 249
+                self.state = 268
                 self.lookupOp()
                 pass
-            elif token in [23]:
+            elif token in [25]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 250
+                self.state = 269
                 self.parameterOp()
                 pass
-            elif token in [27]:
+            elif token in [29]:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 251
-                self.match(asteroideaParser.T__26)
-                self.state = 252
+                self.state = 270
+                self.match(asteroideaParser.T__28)
+                self.state = 271
                 self.number()
-                self.state = 253
-                self.match(asteroideaParser.T__26)
+                self.state = 272
+                self.match(asteroideaParser.T__28)
                 pass
             else:
                 raise NoViableAltException(self)
@@ -2580,12 +2783,12 @@ class asteroideaParser ( Parser ):
     def lookupOp(self):
 
         localctx = asteroideaParser.LookupOpContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 72, self.RULE_lookupOp)
+        self.enterRule(localctx, 78, self.RULE_lookupOp)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 257
-            self.match(asteroideaParser.T__27)
-            self.state = 258
+            self.state = 276
+            self.match(asteroideaParser.T__29)
+            self.state = 277
             localctx.name = self.match(asteroideaParser.IDENTIFIER)
         except RecognitionException as re:
             localctx.exception = re

@@ -116,6 +116,33 @@ class asteroideaListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by asteroideaParser#modifyVarOp.
+    def enterModifyVarOp(self, ctx:asteroideaParser.ModifyVarOpContext):
+        pass
+
+    # Exit a parse tree produced by asteroideaParser#modifyVarOp.
+    def exitModifyVarOp(self, ctx:asteroideaParser.ModifyVarOpContext):
+        pass
+
+
+    # Enter a parse tree produced by asteroideaParser#incrementVarOp.
+    def enterIncrementVarOp(self, ctx:asteroideaParser.IncrementVarOpContext):
+        pass
+
+    # Exit a parse tree produced by asteroideaParser#incrementVarOp.
+    def exitIncrementVarOp(self, ctx:asteroideaParser.IncrementVarOpContext):
+        pass
+
+
+    # Enter a parse tree produced by asteroideaParser#decrementVarOp.
+    def enterDecrementVarOp(self, ctx:asteroideaParser.DecrementVarOpContext):
+        pass
+
+    # Exit a parse tree produced by asteroideaParser#decrementVarOp.
+    def exitDecrementVarOp(self, ctx:asteroideaParser.DecrementVarOpContext):
+        pass
+
+
     # Enter a parse tree produced by asteroideaParser#loopStatement.
     def enterLoopStatement(self, ctx:asteroideaParser.LoopStatementContext):
         pass

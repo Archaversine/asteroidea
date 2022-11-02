@@ -67,9 +67,10 @@ class AsteroideaVisitor(asteroideaVisitor):
         #AsteroideaVisitor.functions = {}
         #AsteroideaVisitor.function_vars = AsteroideaVisitor.function_vars[:1]
 
-        self.update_tape_vars()
+        self.update_tape_vars(0)
 
-    def update_tape_vars(self) -> None:
+    def update_tape_vars(self, prev_pos: int) -> None:
+        self.bookmarks['__prev'] = prev_pos
         self.bookmarks['__current'] = self.tape_pos
         self.bookmarks['__first'] = 0
         self.bookmarks['__last'] = len(self.tape) - 1
@@ -224,8 +225,11 @@ class AsteroideaVisitor(asteroideaVisitor):
     def visitMoveOp(self, ctx:asteroideaParser.MoveOpContext):
 
         # Call the appropriate function based off of the given operator
+
+        pos = self.tape_pos
+
         self.move_ops[ctx.op.text]()
-        self.update_tape_vars()
+        self.update_tape_vars(prev_pos=pos)
 
         return None
 
@@ -372,12 +376,36 @@ class AsteroideaVisitor(asteroideaVisitor):
         visitor = AsteroideaVisitor()
         visitor.visit(tree)
 
-        self.update_tape_vars()
+        self.update_tape_vars(self.bookmarks['__prev'])
 
     # Visit a parse tree produced by asteroideaParser#haltOp.
     def visitHaltOp(self, ctx:asteroideaParser.HaltOpContext):
         print("HALTED")
         sys.exit(0)
+
+    # Visit a parse tree produced by asteroideaParser#incrementVarOp.
+    def visitIncrementVarOp(self, ctx:asteroideaParser.IncrementVarOpContext):
+        var_name = '$' + ctx.name.text
+
+        for scope in self.function_vars[::-1]:
+            if var_name in scope:
+                scope[var_name] += self.visit(ctx.val)
+                return
+
+        print(f"ERROR! Variable does {var_name} does not exist")
+        sys.exit(1)
+
+    # Visit a parse tree produced by asteroideaParser#decrementVarOp.
+    def visitDecrementVarOp(self, ctx:asteroideaParser.DecrementVarOpContext):
+        var_name = '$' + ctx.name.text
+
+        for scope in self.function_vars[::-1]:
+            if var_name in scope:
+                scope[var_name] -= self.visit(ctx.val)
+                return
+
+        print(f"ERROR! Variable does {var_name} does not exist")
+        sys.exit(1)
 
 
 def run(filename: str) -> None:

@@ -13,6 +13,7 @@ stmt: setTapeOp
     | functionStatement
     | debugOp
     | setVarOp
+    | modifyVarOp
     | importStatement
     | haltOp
     ;
@@ -38,6 +39,12 @@ setTapeLengthOp: '##' cells=NUM values=NUM;
 setTapeStringOp: '#' string=STRING  ;
 
 setVarOp: name=IDENTIFIER ':=' val=number;
+modifyVarOp: incrementVarOp
+    | decrementVarOp
+    ;
+
+incrementVarOp: name=IDENTIFIER '+=' val=number;
+decrementVarOp: name=IDENTIFIER '-=' val=number;
 
 loopStatement: repeatStatement
     | whileStatement
