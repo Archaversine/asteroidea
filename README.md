@@ -244,7 +244,7 @@ Adding and Subtracting numbers:
 1 ++ 3 -- 1 ++ 2
 ```
 
-### Out String Operators
+#### Out String Operators
 
 To make printing information to the terminal easier, you can surround text with two backticks (\`). Note:
 This will not automatically end a newline, but you can add in newlines using `\n`.
@@ -253,6 +253,32 @@ Printing `Hello, World!` to the terminal using an out string:
 
 ```
 `Hello, World!\n`
+```
+
+#### Rolling Loop [`{}`]
+
+When writing asteroidea programs, the pattern `[-1](*f ->) *f` appears in many places to apply the function `f`
+to every cell. To make this easier, a rolling loop was added to asteroidea. A rolling loop acts like a regular 
+loop except after every iteration the tape position is shifted right by one until the end of the loop is reached.
+
+For example: `[-1](*f ->) *f` can be rewritten as one of the following:
+
+```
+{0}(*f)
+
+{}(*f)
+```
+
+And the loop `[4](+2 -1 ->) +2 -1` can be rewritten as:
+
+```
+{5}(+2 -1)
+```
+
+And the rolling loop `{3}(-1)` can be rewritten as:
+
+```
+[2](-1 ->) -1
 ```
 
 #### Debug Operators [`[===]`] and [`[%%%]`] 
