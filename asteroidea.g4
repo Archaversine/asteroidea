@@ -56,9 +56,14 @@ decrementVarOp: name=IDENTIFIER '-=' val=number;
 loopStatement: repeatStatement
     | whileStatement
     | untilStatement
+    | rollingRepeatStatement
     ;
 
 repeatStatement: '[' ('-')? iterations=number ']' block=scope;
+rollingRepeatStatement: '{' '}' block=scope     # rollRepeatZero
+    | '{' iterations=number '}' block=scope     # rollRepeatPositive
+    | '{' '-' iterations=number '}' block=scope # rollRepeatNegative
+    ;
 whileStatement: '?' block=scope;
 untilStatement: '!?' block=scope;
 

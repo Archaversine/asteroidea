@@ -142,6 +142,9 @@ class AsteroideaVisitor(asteroideaVisitor):
         if ctx.children[1].getText() == '-':
             iterations = len(self.tape) - iterations
 
+        if iterations == 0:
+            iterations = len(self.tape)
+
         for _ in range(iterations):
             self.visitChildren(ctx.block)
 
@@ -158,6 +161,52 @@ class AsteroideaVisitor(asteroideaVisitor):
             self.visitChildren(ctx.block)
 
         return None
+
+    # Visit a parse tree produced by asteroideaParser#rollRepeatZero.
+    def visitRollRepeatZero(self, ctx:asteroideaParser.RollRepeatZeroContext):
+        for i in range(len(self.tape) - 1):
+            self.visitChildren(ctx.block)
+
+            self.tape_pos += 1
+            self.update_tape_vars(prev_pos=self.tape_pos - 1)
+
+            if self.tape_pos >= len(self.tape):
+                print(f"ERROR! Invalid tape position {self.tape_pos}")
+
+        self.visitChildren(ctx.block)
+
+    # Visit a parse tree produced by asteroideaParser#rollRepeatPositive.
+    def visitRollRepeatPositive(self, ctx:asteroideaParser.RollRepeatPositiveContext):
+        iterations = self.visit(ctx.iterations)
+
+        if iterations == 0:
+            iterations = len(self.tape)
+
+        for i in range(iterations - 1):
+            self.visitChildren(ctx.block)
+
+            self.tape_pos += 1
+            self.update_tape_vars(prev_pos=self.tape_pos - 1)
+
+            if self.tape_pos >= len(self.tape):
+                print(f"ERROR! Invalid tape position {self.tape_pos}")
+
+        self.visitChildren(ctx.block)
+
+    # Visit a parse tree produced by asteroideaParser#rollRepeatNegative.
+    def visitRollRepeatNegative(self, ctx:asteroideaParser.RollRepeatNegativeContext):
+        iterations = len(self.tape) - self.visit(ctx.iterations)
+
+        for i in range(iterations - 1):
+            self.visitChildren(ctx.block)
+
+            self.tape_pos += 1
+            self.update_tape_vars(prev_pos=self.tape_pos - 1)
+
+            if self.tape_pos >= len(self.tape):
+                print(f"ERROR! Invalid tape position {self.tape_pos}")
+
+        self.visitChildren(ctx.block)
 
     # Visit a parse tree produced by asteroideaParser#ifStatement.
     def visitIfStatement(self, ctx:asteroideaParser.IfStatementContext):
@@ -447,6 +496,7 @@ class AsteroideaVisitor(asteroideaVisitor):
         for scope in self.function_vars[::-1]:
             if var_name in scope:
                 scope[var_name] += self.visit(ctx.val)
+                scope[var_name] %= 0x100
                 return
 
         print(f"ERROR! Variable does {var_name} does not exist")
@@ -459,6 +509,7 @@ class AsteroideaVisitor(asteroideaVisitor):
         for scope in self.function_vars[::-1]:
             if var_name in scope:
                 scope[var_name] -= self.visit(ctx.val)
+                scope[var_name] %= 0x100
                 return
 
         print(f"ERROR! Variable does {var_name} does not exist")

@@ -109,6 +109,21 @@ class asteroideaVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by asteroideaParser#rollRepeatZero.
+    def visitRollRepeatZero(self, ctx:asteroideaParser.RollRepeatZeroContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by asteroideaParser#rollRepeatPositive.
+    def visitRollRepeatPositive(self, ctx:asteroideaParser.RollRepeatPositiveContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by asteroideaParser#rollRepeatNegative.
+    def visitRollRepeatNegative(self, ctx:asteroideaParser.RollRepeatNegativeContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by asteroideaParser#whileStatement.
     def visitWhileStatement(self, ctx:asteroideaParser.WhileStatementContext):
         return self.visitChildren(ctx)

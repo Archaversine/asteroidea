@@ -188,6 +188,33 @@ class asteroideaListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by asteroideaParser#rollRepeatZero.
+    def enterRollRepeatZero(self, ctx:asteroideaParser.RollRepeatZeroContext):
+        pass
+
+    # Exit a parse tree produced by asteroideaParser#rollRepeatZero.
+    def exitRollRepeatZero(self, ctx:asteroideaParser.RollRepeatZeroContext):
+        pass
+
+
+    # Enter a parse tree produced by asteroideaParser#rollRepeatPositive.
+    def enterRollRepeatPositive(self, ctx:asteroideaParser.RollRepeatPositiveContext):
+        pass
+
+    # Exit a parse tree produced by asteroideaParser#rollRepeatPositive.
+    def exitRollRepeatPositive(self, ctx:asteroideaParser.RollRepeatPositiveContext):
+        pass
+
+
+    # Enter a parse tree produced by asteroideaParser#rollRepeatNegative.
+    def enterRollRepeatNegative(self, ctx:asteroideaParser.RollRepeatNegativeContext):
+        pass
+
+    # Exit a parse tree produced by asteroideaParser#rollRepeatNegative.
+    def exitRollRepeatNegative(self, ctx:asteroideaParser.RollRepeatNegativeContext):
+        pass
+
+
     # Enter a parse tree produced by asteroideaParser#whileStatement.
     def enterWhileStatement(self, ctx:asteroideaParser.WhileStatementContext):
         pass
